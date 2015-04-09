@@ -6,6 +6,159 @@
     <custom-block blocktag="custom-15" blocktype="ACTION" code="~.say(&quot;Flying Bullet&quot;, &quot;_customBlock_&quot;);" desc="" global="false" gui="Missing" id="15" message="" name="" oid="-1" return="VOID" shared="false" snippetID="11">
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
+    <tileset across="8" atlasID="0" desc="The tileset from the Action Rpg Kit - Stand Alone." down="17" id="23" name="Action RPG" oid="-1" shared="false" th="32" tw="32">
+        <tile collision="1" data="" durations="100" frames="0" id="0" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="1" id="1" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="2" id="2" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="3" id="3" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="4" id="4" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="5" id="5" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="6" id="6" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="7" id="7" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="8" id="8" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="9" id="9" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="10" id="10" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="11" id="11" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="12" id="12" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="13" id="13" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="14" id="14" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="15" id="15" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="16" id="16" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="17" id="17" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="18" id="18" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="19" id="19" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="20" id="20" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="21" id="21" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="22" id="22" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="23" id="23" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="24" id="24" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="25" id="25" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="26" id="26" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="27" id="27" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="28" id="28" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="29" id="29" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="30" id="30" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="31" id="31" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="32" id="32" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="33" id="33" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="34" id="34" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="35" id="35" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="36" id="36" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="37" id="37" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="38" id="38" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="39" id="39" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="40" id="40" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="41" id="41" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="42" id="42" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="43" id="43" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="44" id="44" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="45" id="45" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="46" id="46" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="47" id="47" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="48" id="48" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="49" id="49" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="50" id="50" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="51" id="51" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="52" id="52" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="53" id="53" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="54" id="54" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="55" id="55" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="56" id="56" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="57" id="57" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="58" id="58" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="59" id="59" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="60" id="60" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="61" id="61" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="62" id="62" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="63" id="63" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="64" id="64" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="65" id="65" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="66" id="66" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="67" id="67" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="68" id="68" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="69" id="69" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="70" id="70" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="71" id="71" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="72" id="72" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="73" id="73" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="74" id="74" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="75" id="75" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="76" id="76" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="77" id="77" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="78" id="78" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="79" id="79" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="80" id="80" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="81" id="81" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="82" id="82" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="83" id="83" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="84" id="84" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="85" id="85" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="86" id="86" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="87" id="87" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="88" id="88" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="89" id="89" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="90" id="90" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="91" id="91" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="92" id="92" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="93" id="93" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="94" id="94" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="95" id="95" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="96" id="96" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="97" id="97" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="98" id="98" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="99" id="99" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="100" id="100" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="101" id="101" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="102" id="102" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="103" id="103" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="104" id="104" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="105" id="105" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="106" id="106" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="107" id="107" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="108" id="108" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="109" id="109" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="110" id="110" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="111" id="111" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="112" id="112" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="113" id="113" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="114" id="114" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="115" id="115" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="116" id="116" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="117" id="117" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="118" id="118" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="119" id="119" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="120" id="120" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="121" id="121" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="122" id="122" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="123" id="123" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="124" id="124" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="125" id="125" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="126" id="126" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="127" id="127" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="128" id="128" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="129" id="129" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="130" id="130" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="131" id="131" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="132" id="132" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="133" id="133" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="134" id="134" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="135" id="135" order="-1"/>
+    </tileset>
+    <custom-block blocktag="custom-34" blocktype="ACTION" code="~.say(&quot;Spawn Enemies&quot;, &quot;_customBlock_activate_enemy&quot;, [~]);" desc="" global="false" gui="make %0 activate enemy %1" id="34" message="activate_enemy" name="activate_enemy" oid="-1" return="VOID" shared="false" snippetID="16">
+        <blank name="Self" order="0" type="ACTOR"/>
+        <blank name="Enemy" order="1" type="ACTOR"/>
+    </custom-block>
+    <custom-block blocktag="custom-26" blocktype="ACTION" code="~.say(&quot;Follow Path&quot;, &quot;_customBlock_AddNode&quot;, [~,~]);" desc="" global="false" gui="add node ( x: %1 y: %2 ) to path for %0" id="26" message="AddNode" name="AddNode" oid="-1" return="VOID" shared="false" snippetID="13">
+        <blank name="Self" order="0" type="ACTOR"/>
+        <blank name="x" order="1" type="NUMBER"/>
+        <blank name="y" order="2" type="NUMBER"/>
+    </custom-block>
+    <custom-block blocktag="custom-27" blocktype="ACTION" code="~.say(&quot;Follow Path&quot;, &quot;_customBlock_AddNodeWithCustomSpeed&quot;, [~,~,~]);" desc="" global="false" gui="add node ( x: %1 y: %2 ) with speed %3 to path for %0" id="27" message="AddNodeWithCustomSpeed" name="AddNodeWithCustomSpeed" oid="-1" return="VOID" shared="false" snippetID="13">
+        <blank name="Self" order="0" type="ACTOR"/>
+        <blank name="x" order="1" type="NUMBER"/>
+        <blank name="y" order="2" type="NUMBER"/>
+        <blank name="speed" order="3" type="NUMBER"/>
+    </custom-block>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="10" fixedrot="false" fric="0.2" gid="6" id="12" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Bullet" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="13" static="false">
         <snippets>
             <s enabled="true" id="11">
@@ -44,28 +197,10 @@
             <poly data="4,0,0,48,0,48,48,0,48" density="0.1" fric="0.2" gid="-1000" id="0" name="Default" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
-    <custom-block blocktag="custom-8" blocktype="ACTION" code="~.say(&quot;Health Manager&quot;, &quot;_customBlock_Damage&quot;, [~]);" desc="Subtracts a specific amount of health from the Actor." global="false" gui="Damage %0 By %1" id="8" message="Damage" name="Damage" oid="-1" return="VOID" shared="false" snippetID="8">
+    <custom-block blocktag="custom-28" blocktype="ACTION" code="~.say(&quot;Follow Path&quot;, &quot;_customBlock_ClearPath&quot;);" desc="" global="false" gui="clear path for %0" id="28" message="ClearPath" name="ClearPath" oid="-1" return="VOID" shared="false" snippetID="13">
         <blank name="Self" order="0" type="ACTOR"/>
-        <blank name="Amount" order="1" type="NUMBER"/>
     </custom-block>
-    <sprite atlasID="0" default="4" defaultAnimation="4" desc="" height="19" id="1" name="Enemy 2" shared="false" width="16">
-        <anim across="4" down="1" durations="150,150,150,150" height="19" id="0" loop="true" name="Down" numframes="4" originx="8" originy="10" sync="false" version="1" width="64">
-            <poly data="4,0,0,16,0,16,20,0,20" density="0.1" fric="0.2" gid="-1000" id="0" name="Down" rest="0.0" sensor="false"/>
-        </anim>
-        <anim across="4" down="1" durations="150,150,150,150" height="19" id="1" loop="true" name="Up" numframes="4" originx="8" originy="10" sync="false" version="1" width="64">
-            <poly data="4,0,0,16,0,16,20,0,20" density="0.1" fric="0.2" gid="-1000" id="0" name="Up" rest="0.0" sensor="false"/>
-        </anim>
-        <anim across="4" down="1" durations="150,150,150,150" height="19" id="2" loop="true" name="Left" numframes="4" originx="7" originy="10" sync="false" version="1" width="56">
-            <poly data="4,0,0,14,0,14,20,0,20" density="0.1" fric="0.2" gid="-1000" id="0" name="Left" rest="0.0" sensor="false"/>
-        </anim>
-        <anim across="4" down="1" durations="150,150,150,150" height="19" id="3" loop="true" name="Right" numframes="4" originx="7" originy="10" sync="false" version="1" width="56">
-            <poly data="4,0,0,14,0,14,20,0,20" density="0.1" fric="0.2" gid="-1000" id="0" name="Right" rest="0.0" sensor="false"/>
-        </anim>
-        <anim across="1" down="1" durations="100" height="19" id="4" loop="true" name="Idle" numframes="1" originx="8" originy="9" sync="false" version="1" width="16">
-            <poly data="4,0,0,16,0,16,19,0,19" density="0.1" fric="0.2" gid="-1000" id="0" name="Idle" rest="0.0" sensor="false"/>
-        </anim>
-    </sprite>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="1" fixedrot="true" fric="0.2" gid="5" id="0" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="Female Blue" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="1" static="false">
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="12" fixedrot="true" fric="0.2" gid="5" id="24" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="Copy of Female Blue" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="25" static="false">
         <snippets>
             <s enabled="true" id="2">
                 <prop id="1" list="0" val="1.0"/>
@@ -87,6 +222,102 @@
                 <prop id="4" list="0" val="16.0"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
+            <s enabled="true" id="4">
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="8">
+                <prop id="1" list="0" val="100"/>
+                <prop id="2" list="0" val="100"/>
+                <prop id="3" list="0" val="3.0"/>
+                <prop id="4" list="0" val="Healed"/>
+                <prop id="5" list="0" val="Damaged"/>
+                <prop id="7" list="0" val="Kill"/>
+                <prop id="8" list="0" val="false"/>
+                <prop id="9" list="0" val="0.5"/>
+                <prop id="10" list="0" val="true"/>
+                <prop id="11" list="0" val="false"/>
+                <prop id="12" list="0" val="-1"/>
+                <prop id="13" list="0" val=""/>
+                <prop id="14" list="0" val="-1"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="15" list="0" val="-1"/>
+                <prop id="17" list="0" val="false"/>
+                <prop id="16" list="0" val="-1"/>
+                <prop id="19" list="0" val="0.0"/>
+                <prop id="18" list="0" val="0.0"/>
+                <prop id="20" list="0" val=""/>
+                <prop id="23" list="0" val="false"/>
+                <prop id="22" list="0" val="0.0"/>
+                <prop id="25" list="0" val="0.0"/>
+                <prop id="24" list="0" val="-1"/>
+                <prop id="27" list="0" val="-2"/>
+                <prop id="26" list="0" val="Actor"/>
+                <prop id="29" list="0" val="-8"/>
+                <prop id="28" list="0" val="1.0"/>
+                <prop id="31" list="0" val="5.0"/>
+                <prop id="30" list="0" val="20"/>
+                <prop id="32" list="0" val="Horizontal"/>
+                <prop id="39" list="0" val="0,0,0,255"/>
+                <prop id="42" list="0" val="51,153,102,255"/>
+                <prop id="43" list="0" val="255,153,0,255"/>
+                <prop id="41" list="0" val="0,128,0,255"/>
+                <prop id="46" list="0" val="true"/>
+                <prop id="44" list="0" val="255,0,0,255"/>
+                <prop id="45" list="0" val="255,255,255,255"/>
+            </s>
+            <s enabled="true" id="9">
+                <prop id="1" list="0" val="Damaged"/>
+                <prop id="2" list="0" val="0.1"/>
+                <prop id="3" list="0" val="3"/>
+                <prop id="4" list="0" val="0"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
+    </actor>
+    <custom-block blocktag="custom-8" blocktype="ACTION" code="~.say(&quot;Health Manager&quot;, &quot;_customBlock_Damage&quot;, [~]);" desc="Subtracts a specific amount of health from the Actor." global="false" gui="Damage %0 By %1" id="8" message="Damage" name="Damage" oid="-1" return="VOID" shared="false" snippetID="8">
+        <blank name="Self" order="0" type="ACTOR"/>
+        <blank name="Amount" order="1" type="NUMBER"/>
+    </custom-block>
+    <sprite atlasID="0" default="4" defaultAnimation="4" desc="" height="19" id="1" name="Enemy 2" shared="false" width="16">
+        <anim across="4" down="1" durations="150,150,150,150" height="19" id="0" loop="true" name="Down" numframes="4" originx="8" originy="10" sync="false" version="1" width="64">
+            <poly data="4,0,0,16,0,16,20,0,20" density="0.1" fric="0.2" gid="-1000" id="0" name="Down" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="4" down="1" durations="150,150,150,150" height="19" id="1" loop="true" name="Up" numframes="4" originx="8" originy="10" sync="false" version="1" width="64">
+            <poly data="4,0,0,16,0,16,20,0,20" density="0.1" fric="0.2" gid="-1000" id="0" name="Up" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="4" down="1" durations="150,150,150,150" height="19" id="2" loop="true" name="Left" numframes="4" originx="7" originy="10" sync="false" version="1" width="56">
+            <poly data="4,0,0,14,0,14,20,0,20" density="0.1" fric="0.2" gid="-1000" id="0" name="Left" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="4" down="1" durations="150,150,150,150" height="19" id="3" loop="true" name="Right" numframes="4" originx="7" originy="10" sync="false" version="1" width="56">
+            <poly data="4,0,0,14,0,14,20,0,20" density="0.1" fric="0.2" gid="-1000" id="0" name="Right" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="19" id="4" loop="true" name="Idle" numframes="1" originx="8" originy="9" sync="false" version="1" width="16">
+            <poly data="4,0,0,16,0,16,19,0,19" density="0.1" fric="0.2" gid="-1000" id="0" name="Idle" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <sprite atlasID="0" default="4" defaultAnimation="4" desc="" height="19" id="25" name="Enemy 2" shared="false" width="16">
+        <anim across="4" down="1" durations="150,150,150,150" height="19" id="0" loop="true" name="Down" numframes="4" originx="8" originy="10" sync="false" version="1" width="64">
+            <poly data="4,0,0,16,0,16,20,0,20" density="0.1" fric="0.2" gid="-1000" id="0" name="Down" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="4" down="1" durations="150,150,150,150" height="19" id="1" loop="true" name="Up" numframes="4" originx="8" originy="10" sync="false" version="1" width="64">
+            <poly data="4,0,0,16,0,16,20,0,20" density="0.1" fric="0.2" gid="-1000" id="0" name="Up" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="4" down="1" durations="150,150,150,150" height="19" id="2" loop="true" name="Left" numframes="4" originx="7" originy="10" sync="false" version="1" width="56">
+            <poly data="4,0,0,14,0,14,20,0,20" density="0.1" fric="0.2" gid="-1000" id="0" name="Left" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="4" down="1" durations="150,150,150,150" height="19" id="3" loop="true" name="Right" numframes="4" originx="7" originy="10" sync="false" version="1" width="56">
+            <poly data="4,0,0,14,0,14,20,0,20" density="0.1" fric="0.2" gid="-1000" id="0" name="Right" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="19" id="4" loop="true" name="Idle" numframes="1" originx="8" originy="9" sync="false" version="1" width="16">
+            <poly data="4,0,0,16,0,16,19,0,19" density="0.1" fric="0.2" gid="-1000" id="0" name="Idle" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <custom-block blocktag="custom-32" blocktype="ACTION" code="~.say(&quot;Spawn Enemies&quot;, &quot;_customBlock_execute_wave&quot;, [~]);" desc="" global="false" gui="make %0 spawn the enemies defined in %1" id="32" message="execute_wave" name="execute_wave" oid="-1" return="VOID" shared="false" snippetID="16">
+        <blank name="Self" order="0" type="ACTOR"/>
+        <blank name="Definition" order="1" type="LIST"/>
+    </custom-block>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="1" fixedrot="true" fric="0.2" gid="5" id="0" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="Female Blue" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="1" static="false">
+        <snippets>
             <s enabled="true" id="4">
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
@@ -135,6 +366,30 @@
                 <prop id="2" list="0" val="0.1"/>
                 <prop id="3" list="0" val="3"/>
                 <prop id="4" list="0" val="0"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="13">
+                <prop id="1" list="1" val=""/>
+                <prop id="2" list="0" val="0.0"/>
+                <prop id="3" list="0" val="0.0"/>
+                <prop id="4" list="1" val=""/>
+                <prop id="5" list="0" val="0.0"/>
+                <prop id="6" list="0" val="0.0"/>
+                <prop id="7" list="0" val="false"/>
+                <prop id="8" list="0" val="true"/>
+                <prop id="9" list="0" val="0.0"/>
+                <prop id="10" list="0" val="0.0"/>
+                <prop id="12" list="0" val="0.0"/>
+                <prop id="13" list="0" val="0.0"/>
+                <prop id="14" list="0" val="0.0"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="15" list="0" val="0.0"/>
+                <prop id="17" list="0" val="5"/>
+                <prop id="19" list="0" val="0.0"/>
+                <prop id="18" list="0" val="0.0"/>
+                <prop id="23" list="0" val="true"/>
+            </s>
+            <s enabled="true" id="14">
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
         </snippets>
@@ -186,5 +441,34 @@
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Target" order="1" type="ACTOR"/>
         <blank name="Amount of Damage" order="2" type="NUMBER"/>
+    </custom-block>
+    <custom-block blocktag="custom-33" blocktype="ACTION" code="~.say(&quot;Spawn Enemies&quot;, &quot;_customBlock_spawn_enemy&quot;, [~]);" desc="" global="false" gui="make %0 spawn enemy of type %1" id="33" message="spawn_enemy" name="spawn_enemy" oid="-1" return="VOID" shared="false" snippetID="16">
+        <blank name="Self" order="0" type="ACTOR"/>
+        <blank name="Type" order="1" type="TEXT"/>
+    </custom-block>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="15" fixedrot="false" fric="0.2" gid="3" id="29" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Spawning Pool" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="30" static="false">
+        <snippets>
+            <s enabled="true" id="16">
+                <prop id="1" list="0" val="5"/>
+                <prop id="6" list="1" val=""/>
+                <prop id="7" list="1" val=""/>
+                <prop id="8" list="0" val="0"/>
+                <prop id="9" list="0" val="0"/>
+                <prop id="10" list="0" val="0"/>
+                <prop id="11" list="0" val="0"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="14">
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="10" id="30" name="Spawning Pool" shared="false" width="10">
+        <anim across="1" down="1" durations="100" height="10" id="0" loop="true" name="Animation 0" numframes="1" originx="5" originy="5" sync="false" version="2" width="10">
+            <poly data="4,0,0,10,0,10,10,0,10" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <custom-block blocktag="custom-31" blocktype="ACTION" code="~.say(&quot;Spawn Enemies&quot;, &quot;_customBlock_Start_Wave&quot;);" desc="" global="false" gui="start a new wave for %0" id="31" message="Start_Wave" name="Start_Wave" oid="-1" return="VOID" shared="false" snippetID="16">
+        <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
 </pack>

@@ -46,61 +46,10 @@
             <int id="1" val=""/>
         </times>
     </group>
-    <group eventID="2" id="0">
-        <event-group-region comment="false" x="14" y="15">
-            <group eventID="2" id="-1"/>
-            <int id="0" val="0"/>
-            <REGION eid="this" id="1"/>
-            <GROUP eid="5" id="2"/>
-        </event-group-region>
-    </group>
-    <group eventID="2" id="1">
-        <die comment="false" x="149" y="292">
-            <actor-entered-exited comment="false" id="0" x="0" y="0"/>
-        </die>
-    </group>
-    <group eventID="2" id="2">
-        <custom-8 comment="false" x="36" y="180">
-            <actor-entered-exited comment="false" id="0" x="0" y="0"/>
-            <int id="1" val=""/>
-        </custom-8>
-    </group>
-    <group eventID="2" id="3">
-        <create-actor3 comment="false" x="34" y="441">
-            <ACTORTYPE eid="12" id="0"/>
-            <get-xy comment="false" id="1" x="0" y="0">
-                <ACTOR eid="this" id="0"/>
-                <int id="1" val="2"/>
-            </get-xy>
-            <get-xy comment="false" id="2" x="0" y="0">
-                <ACTOR eid="this" id="0"/>
-                <int id="1" val="3"/>
-            </get-xy>
-            <int id="3" val="0"/>
-        </create-actor3>
-        <custom-16 comment="false" x="34" y="481">
-            <ACTOR eid="lastcreated" id="0"/>
-            <actor-entered-exited comment="false" id="1" x="0" y="0"/>
-            <randint comment="false" id="2" x="0" y="0">
-                <get-val-6-3 comment="false" id="0" x="0" y="0"/>
-                <get-val-6-4 comment="false" id="1" x="0" y="0"/>
-            </randint>
-        </custom-16>
-    </group>
-    <group eventID="2" id="4">
-        <custom-17 comment="false" x="226" y="118">
-            <ACTOR eid="this" id="0"/>
-            <actor-entered-exited comment="false" id="1" x="0" y="0"/>
-        </custom-17>
-    </group>
-    <group eventID="2" id="-1"/>
     <group eventID="3" id="0">
         <event-group-region comment="false" x="15" y="15">
             <group eventID="3" id="-1">
-                <print comment="false" x="26" y="47">
-                    <int id="0" val="Adding enemy to list"/>
-                </print>
-                <add-list comment="false" x="26" y="67">
+                <add-list comment="false" x="26" y="47">
                     <get-val-6-5 comment="false" id="0" x="0" y="0"/>
                     <actor-entered-exited comment="false" id="1" x="0" y="0"/>
                 </add-list>
@@ -110,14 +59,16 @@
             <GROUP eid="5" id="2"/>
         </event-group-region>
     </group>
+    <group eventID="3" id="1">
+        <print comment="false" x="26" y="104">
+            <int id="0" val="Adding enemy to list"/>
+        </print>
+    </group>
     <group eventID="3" id="-1"/>
     <group eventID="4" id="0">
         <event-group-region comment="false" x="15" y="15">
             <group eventID="4" id="-1">
-                <print comment="false" x="26" y="47">
-                    <int id="0" val="remove enemy from list"/>
-                </print>
-                <remove-item comment="false" x="26" y="67">
+                <remove-item comment="false" x="26" y="47">
                     <get-val-6-5 comment="false" id="0" x="0" y="0"/>
                     <actor-entered-exited comment="false" id="1" x="0" y="0"/>
                 </remove-item>
@@ -127,14 +78,16 @@
             <GROUP eid="5" id="2"/>
         </event-group-region>
     </group>
+    <group eventID="4" id="1">
+        <print comment="false" x="26" y="79">
+            <int id="0" val="remove enemy from list"/>
+        </print>
+    </group>
     <group eventID="4" id="-1"/>
     <group eventID="5" id="0">
         <event-group-create-kill comment="false" x="15" y="15">
             <group eventID="5" id="-1">
-                <print comment="false" x="26" y="47">
-                    <int id="0" val="remove enemy from list"/>
-                </print>
-                <remove-item comment="false" x="26" y="67">
+                <remove-item comment="false" x="26" y="47">
                     <get-val-6-5 comment="false" id="0" x="0" y="0"/>
                     <actor-created-killed comment="false" id="1" x="0" y="0"/>
                 </remove-item>
@@ -143,43 +96,26 @@
             <GROUP eid="5" id="1"/>
         </event-group-create-kill>
     </group>
+    <group eventID="5" id="1">
+        <print comment="false" x="44" y="129">
+            <int id="0" val="remove enemy from list"/>
+        </print>
+    </group>
     <group eventID="5" id="-1"/>
     <group eventID="6" id="0">
         <event-periodic comment="false" x="15" y="15">
             <group eventID="6" id="-1">
-                <print comment="false" x="26" y="47">
-                    <int id="0" val="DEBUG!!"/>
-                </print>
-                <print comment="false" x="26" y="67">
-                    <int id="0" val="xxx"/>
-                </print>
-                <print comment="false" x="26" y="87">
-                    <int id="0" val="123"/>
-                </print>
-                <print comment="false" x="26" y="107">
-                    <tostring comment="false" id="0" x="0" y="0">
-                        <length-list comment="false" id="0" x="0" y="0">
-                            <get-val-6-5 comment="false" id="0" x="0" y="0"/>
-                        </length-list>
-                    </tostring>
-                </print>
-                <print comment="false" x="26" y="142">
-                    <get-val-6-5 comment="false" id="0" x="0" y="0"/>
-                </print>
-                <print comment="false" x="26" y="167">
-                    <int id="0" val="456"/>
-                </print>
-                <if comment="false" x="26" y="187">
+                <if comment="false" x="26" y="47">
                     <group eventID="6" id="-1">
-                        <stop comment="false" x="37" y="217"/>
+                        <stop comment="false" x="37" y="77"/>
                     </group>
                     <is-empty comment="false" id="0" x="0" y="0">
                         <get-val-6-5 comment="false" id="0" x="0" y="0"/>
                     </is-empty>
                 </if>
-                <if comment="false" x="26" y="249">
+                <if comment="false" x="26" y="109">
                     <group eventID="6" id="-1">
-                        <custom-17 comment="false" x="37" y="279">
+                        <custom-17 comment="false" x="37" y="139">
                             <ACTOR eid="this" id="0"/>
                             <custom-19 comment="false" id="1" x="0" y="0">
                                 <ACTOR eid="this" id="0"/>
@@ -191,9 +127,9 @@
                         <int id="1" val="0"/>
                     </eq>
                 </if>
-                <else-if comment="false" x="26" y="331">
+                <else-if comment="false" x="26" y="191">
                     <group eventID="6" id="-1">
-                        <custom-17 comment="false" x="37" y="361">
+                        <custom-17 comment="false" x="37" y="221">
                             <ACTOR eid="this" id="0"/>
                             <custom-20 comment="false" id="1" x="0" y="0">
                                 <ACTOR eid="this" id="0"/>
@@ -205,9 +141,9 @@
                         <int id="1" val="1"/>
                     </eq>
                 </else-if>
-                <else-if comment="false" x="26" y="413">
+                <else-if comment="false" x="26" y="273">
                     <group eventID="6" id="-1">
-                        <custom-17 comment="false" x="37" y="443">
+                        <custom-17 comment="false" x="37" y="303">
                             <ACTOR eid="this" id="0"/>
                             <custom-21 comment="false" id="1" x="0" y="0">
                                 <ACTOR eid="this" id="0"/>
@@ -219,9 +155,9 @@
                         <int id="1" val="2"/>
                     </eq>
                 </else-if>
-                <else-if comment="false" x="26" y="495">
+                <else-if comment="false" x="26" y="355">
                     <group eventID="6" id="-1">
-                        <custom-17 comment="false" x="37" y="525">
+                        <custom-17 comment="false" x="37" y="385">
                             <ACTOR eid="this" id="0"/>
                             <custom-22 comment="false" id="1" x="0" y="0">
                                 <ACTOR eid="this" id="0"/>
@@ -233,9 +169,9 @@
                         <int id="1" val="3"/>
                     </eq>
                 </else-if>
-                <else-if comment="false" x="26" y="577">
+                <else-if comment="false" x="26" y="437">
                     <group eventID="6" id="-1">
-                        <custom-17 comment="false" x="37" y="607">
+                        <custom-17 comment="false" x="37" y="467">
                             <ACTOR eid="this" id="0"/>
                             <custom-18 comment="false" id="1" x="0" y="0">
                                 <ACTOR eid="this" id="0"/>
@@ -251,6 +187,30 @@
             <get-val-6-7 comment="false" id="0" x="0" y="0"/>
             <ACTOR eid="this" id="2"/>
         </event-periodic>
+    </group>
+    <group eventID="6" id="1">
+        <print comment="false" x="289" y="160">
+            <int id="0" val="DEBUG!!"/>
+        </print>
+        <print comment="false" x="289" y="180">
+            <int id="0" val="xxx"/>
+        </print>
+        <print comment="false" x="289" y="200">
+            <int id="0" val="123"/>
+        </print>
+        <print comment="false" x="289" y="220">
+            <tostring comment="false" id="0" x="0" y="0">
+                <length-list comment="false" id="0" x="0" y="0">
+                    <get-val-6-5 comment="false" id="0" x="0" y="0"/>
+                </length-list>
+            </tostring>
+        </print>
+        <print comment="false" x="289" y="255">
+            <get-val-6-5 comment="false" id="0" x="0" y="0"/>
+        </print>
+        <print comment="false" x="289" y="280">
+            <int id="0" val="456"/>
+        </print>
     </group>
     <group eventID="6" id="-1"/>
     <group eventID="7" id="0">
@@ -318,17 +278,17 @@
     <group eventID="9" id="0">
         <receiver-3-19 comment="false" x="15" y="15">
             <group eventID="9" id="-1">
-                <set-val-6-8 comment="false" x="26" y="45">
+                <set-val-6-8 comment="false" x="26" y="40">
                     <get-item comment="false" id="0" x="0" y="0">
                         <get-val-6-5 comment="false" id="0" x="0" y="0"/>
                         <int id="1" val="0"/>
                     </get-item>
                 </set-val-6-8>
-                <for-each comment="false" x="26" y="82">
+                <for-each comment="false" x="26" y="77">
                     <group eventID="9" id="-1">
-                        <if comment="false" x="37" y="107">
+                        <if comment="false" x="37" y="102">
                             <group eventID="9" id="-1">
-                                <set-val-6-8 comment="false" x="48" y="150">
+                                <set-val-6-8 comment="false" x="48" y="145">
                                     <for-each-item comment="false" id="0" x="0" y="0"/>
                                 </set-val-6-8>
                             </group>
@@ -344,28 +304,28 @@
                     </group>
                     <get-val-6-5 comment="false" id="0" x="0" y="0"/>
                 </for-each>
-                <return comment="false" x="26" y="206">
+                <return comment="false" x="26" y="201">
                     <get-val-6-8 comment="false" id="0" x="0" y="0"/>
                 </return>
             </group>
-            <get-byobval-6-19-0 comment="false" id="0" x="0" y="0"/>
+            <int id="0" val=""/>
         </receiver-3-19>
     </group>
     <group eventID="9" id="-1"/>
     <group eventID="10" id="0">
         <receiver-4-20 comment="false" x="15" y="15">
             <group eventID="10" id="-1">
-                <set-val-6-8 comment="false" x="26" y="45">
+                <set-val-6-8 comment="false" x="26" y="40">
                     <get-item comment="false" id="0" x="0" y="0">
                         <get-val-6-5 comment="false" id="0" x="0" y="0"/>
                         <int id="1" val="0"/>
                     </get-item>
                 </set-val-6-8>
-                <for-each comment="false" x="26" y="82">
+                <for-each comment="false" x="26" y="77">
                     <group eventID="10" id="-1">
-                        <if comment="false" x="37" y="107">
+                        <if comment="false" x="37" y="102">
                             <group eventID="10" id="-1">
-                                <set-val-6-8 comment="false" x="48" y="150">
+                                <set-val-6-8 comment="false" x="48" y="145">
                                     <for-each-item comment="false" id="0" x="0" y="0"/>
                                 </set-val-6-8>
                             </group>
@@ -381,28 +341,28 @@
                     </group>
                     <get-val-6-5 comment="false" id="0" x="0" y="0"/>
                 </for-each>
-                <return comment="false" x="26" y="206">
+                <return comment="false" x="26" y="201">
                     <get-val-6-8 comment="false" id="0" x="0" y="0"/>
                 </return>
             </group>
-            <get-byobval-6-20-0 comment="false" id="0" x="0" y="0"/>
+            <int id="0" val=""/>
         </receiver-4-20>
     </group>
     <group eventID="10" id="-1"/>
     <group eventID="11" id="0">
         <receiver-5-21 comment="false" x="15" y="15">
             <group eventID="11" id="-1">
-                <set-val-6-8 comment="false" x="26" y="45">
+                <set-val-6-8 comment="false" x="26" y="40">
                     <get-item comment="false" id="0" x="0" y="0">
                         <get-val-6-5 comment="false" id="0" x="0" y="0"/>
                         <int id="1" val="0"/>
                     </get-item>
                 </set-val-6-8>
-                <for-each comment="false" x="26" y="82">
+                <for-each comment="false" x="26" y="77">
                     <group eventID="11" id="-1">
-                        <if comment="false" x="37" y="107">
+                        <if comment="false" x="37" y="102">
                             <group eventID="11" id="-1">
-                                <set-val-6-8 comment="false" x="48" y="150">
+                                <set-val-6-8 comment="false" x="48" y="145">
                                     <for-each-item comment="false" id="0" x="0" y="0"/>
                                 </set-val-6-8>
                             </group>
@@ -418,28 +378,28 @@
                     </group>
                     <get-val-6-5 comment="false" id="0" x="0" y="0"/>
                 </for-each>
-                <return comment="false" x="26" y="206">
+                <return comment="false" x="26" y="201">
                     <get-val-6-8 comment="false" id="0" x="0" y="0"/>
                 </return>
             </group>
-            <get-byobval-6-21-0 comment="false" id="0" x="0" y="0"/>
+            <int id="0" val=""/>
         </receiver-5-21>
     </group>
     <group eventID="11" id="-1"/>
     <group eventID="12" id="0">
         <receiver-6-22 comment="false" x="15" y="15">
             <group eventID="12" id="-1">
-                <set-val-6-8 comment="false" x="26" y="45">
+                <set-val-6-8 comment="false" x="26" y="40">
                     <get-item comment="false" id="0" x="0" y="0">
                         <get-val-6-5 comment="false" id="0" x="0" y="0"/>
                         <int id="1" val="0"/>
                     </get-item>
                 </set-val-6-8>
-                <for-each comment="false" x="26" y="82">
+                <for-each comment="false" x="26" y="77">
                     <group eventID="12" id="-1">
-                        <if comment="false" x="37" y="107">
+                        <if comment="false" x="37" y="102">
                             <group eventID="12" id="-1">
-                                <set-val-6-8 comment="false" x="48" y="150">
+                                <set-val-6-8 comment="false" x="48" y="145">
                                     <for-each-item comment="false" id="0" x="0" y="0"/>
                                 </set-val-6-8>
                             </group>
@@ -455,11 +415,11 @@
                     </group>
                     <get-val-6-5 comment="false" id="0" x="0" y="0"/>
                 </for-each>
-                <return comment="false" x="26" y="206">
+                <return comment="false" x="26" y="201">
                     <get-val-6-8 comment="false" id="0" x="0" y="0"/>
                 </return>
             </group>
-            <get-byobval-6-22-0 comment="false" id="0" x="0" y="0"/>
+            <int id="0" val=""/>
         </receiver-6-22>
     </group>
     <group eventID="12" id="-1"/>

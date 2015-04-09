@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<scene depth="3" desc="" eventsnippetid="0" extheight="544" extwidth="704" extx="-32" exty="-32" format="3.3.0" gravx="-0.0" gravy="0.0" height="480" id="0" name="test level" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="640">
+<scene depth="3" desc="" eventsnippetid="17" extheight="544" extwidth="736" extx="-32" exty="-32" format="3.3.0" gravx="-0.0" gravy="0.0" height="480" id="1" name="test level 2" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="672">
     <layers>
         <color-bg blue="0" green="255" red="0"/>
         <layer blendMode="normal" color="100,168,234" id="0" locked="false" name="Background" opacity="100" order="2" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
@@ -10,9 +10,9 @@
     <regions/>
     <terrainRegions/>
     <actors>
-        <actor a="0.0" aid="5" c="false" group="4" id="2" name="Bunker Blue 5" sx="1.0" sy="1.0" x="156" y="174" z="1"/>
-        <actor a="0.0" aid="6" c="false" group="4" id="2" name="Bunker Blue 6" sx="1.0" sy="1.0" x="439" y="196" z="1"/>
-        <actor a="0.0" aid="8" c="true" group="3" id="29" name="Spawning Pool 8" sx="1.0" sy="1.0" x="318" y="6" z="1">
+        <actor a="0.0" aid="5" c="false" group="4" id="2" name="Bunker Blue 5" sx="1.0" sy="1.0" x="135" y="163" z="1"/>
+        <actor a="0.0" aid="6" c="false" group="4" id="2" name="Bunker Blue 6" sx="1.0" sy="1.0" x="491" y="200" z="1"/>
+        <actor a="0.0" aid="8" c="true" group="3" id="29" name="Spawning Pool 8" sx="1.2" sy="1.6" x="650" y="72" z="1">
             <snippets>
                 <s enabled="true" id="16">
                     <prop id="1" list="0" val="5"/>
@@ -20,10 +20,12 @@
                         <text order="0" value="A A A X X X A A A"/>
                     </prop>
                     <prop id="7" list="1" val="">
-                        <text order="0" value="55 66"/>
+                        <text order="0" value="527 81"/>
                         <text order="1" value="527 175"/>
                         <text order="2" value="496 175"/>
-                        <text order="3" value="380 80"/>
+                        <text order="3" value="496 336"/>
+                        <text order="4" value="396 336"/>
+                        <text order="5" value="369 81"/>
                     </prop>
                     <prop id="8" list="0" val="0"/>
                     <prop id="9" list="0" val="0"/>
@@ -67,6 +69,8 @@
             <prop id="30" list="0" val="true"/>
         </s>
     </snippets>
-    <terrain/>
+    <terrain>
+        <p pts="4,0.0,480.0,0.0,0.0,640.0,0.0,640.0,480.0" x="0.0" y="0.0"/>
+    </terrain>
     <atlases members="" retainAtlases="true"/>
 </scene>
