@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <event-custom comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <set-val-9-4 comment="false" x="26" y="45">
+                    <int id="0" val="0"/>
+                </set-val-9-4>
+                <say-this comment="false" x="26" y="65">
+                    <int id="0" val="flicker"/>
+                </say-this>
+            </group>
+            <get-val-9-1 comment="false" id="0" x="0" y="0"/>
+        </event-custom>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <event-custom comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <toggle-image comment="false" x="26" y="40">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="1"/>
+                </toggle-image>
+                <dolater comment="false" x="26" y="67">
+                    <group eventID="2" id="-1">
+                        <toggle-image comment="false" x="37" y="99">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                        </toggle-image>
+                        <incdec comment="false" x="37" y="126">
+                            <int id="0" val="4"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="1"/>
+                        </incdec>
+                        <if comment="false" x="37" y="153">
+                            <group eventID="2" id="-1">
+                                <dolater comment="false" x="48" y="183">
+                                    <group eventID="2" id="-1">
+                                        <say-this comment="false" x="59" y="215">
+                                            <int id="0" val="flicker"/>
+                                        </say-this>
+                                    </group>
+                                    <get-val-9-2 comment="false" id="0" x="0" y="0"/>
+                                    <ACTOR eid="this" id="2"/>
+                                </dolater>
+                            </group>
+                            <less comment="false" id="0" x="0" y="0">
+                                <get-val-9-4 comment="false" id="0" x="0" y="0"/>
+                                <get-val-9-3 comment="false" id="1" x="0" y="0"/>
+                            </less>
+                        </if>
+                    </group>
+                    <get-val-9-2 comment="false" id="0" x="0" y="0"/>
+                    <ACTOR eid="this" id="2"/>
+                </dolater>
+            </group>
+            <int id="0" val="flicker"/>
+        </event-custom>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>

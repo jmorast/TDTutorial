@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scene depth="3" desc="" eventsnippetid="0" extheight="544" extwidth="704" extx="-32" exty="-32" format="3.3.0" gravx="-0.0" gravy="0.0" height="480" id="0" name="test level" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="640">
+    <layers>
+        <color-bg blue="0" green="255" red="0"/>
+        <layer blendMode="normal" color="100,168,234" id="0" locked="false" name="Background" opacity="100" order="2" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
+        <layer blendMode="normal" color="0,255,0" id="2" locked="false" name="People" opacity="100" order="1" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
+        <layer blendMode="normal" color="0,0,255" id="1" locked="false" name="Towers" opacity="100" order="0" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
+    </layers>
+    <joints/>
+    <regions/>
+    <terrainRegions/>
+    <actors>
+        <actor a="0.0" aid="1" c="false" group="5" id="0" name="Female Blue 1" sx="1.0" sy="1.0" x="233" y="18" z="2"/>
+        <actor a="0.0" aid="2" c="false" group="5" id="0" name="Female Blue 2" sx="1.0" sy="1.0" x="519" y="16" z="2"/>
+        <actor a="0.0" aid="3" c="false" group="5" id="0" name="Female Blue 3" sx="1.0" sy="1.0" x="592" y="456" z="2"/>
+        <actor a="0.0" aid="4" c="false" group="5" id="0" name="Female Blue 4" sx="1.0" sy="1.0" x="88" y="441" z="2"/>
+        <actor a="0.0" aid="5" c="false" group="4" id="2" name="Bunker Blue 5" sx="1.0" sy="1.0" x="156" y="174" z="1"/>
+        <actor a="0.0" aid="6" c="false" group="4" id="2" name="Bunker Blue 6" sx="1.0" sy="1.0" x="439" y="196" z="1"/>
+    </actors>
+    <snippets>
+        <s enabled="true" id="7">
+            <prop id="1" list="0" val="false"/>
+            <prop id="2" list="0" val="0.0"/>
+            <prop id="4" list="0" val="2.0"/>
+            <prop id="5" list="0" val="0.0"/>
+            <prop id="6" list="0" val="0.0"/>
+            <prop id="7" list="0" val="true"/>
+            <prop id="8" list="0" val="true"/>
+            <prop id="10" list="0" val=""/>
+            <prop id="11" list="0" val="0.0"/>
+            <prop id="12" list="0" val="32.0"/>
+            <prop id="13" list="0" val="false"/>
+            <prop id="14" list="0" val="true"/>
+            <prop id="15" list="0" val="false"/>
+            <prop id="17" list="0" val="0.0"/>
+            <prop id="16" list="0" val="8.0"/>
+            <prop id="19" list="0" val="Debugger"/>
+            <prop id="18" list="0" val="false"/>
+            <prop id="21" list="0" val="down"/>
+            <prop id="20" list="0" val="up"/>
+            <prop id="24" list="0" val="-1"/>
+            <prop id="27" list="0" val="0,128,0,255"/>
+            <prop id="29" list="0" val="true"/>
+            <prop id="28" list="0" val="0,0,128,255"/>
+            <prop id="31" list="0" val="false"/>
+            <prop id="30" list="0" val="true"/>
+        </s>
+    </snippets>
+    <terrain/>
+    <atlases members="" retainAtlases="true"/>
+</scene>

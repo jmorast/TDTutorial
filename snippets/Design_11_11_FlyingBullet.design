@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <receiver-1-16 comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <set-val-11-1 comment="false" x="26" y="45">
+                    <get-byobval-11-16-1 comment="false" id="0" x="0" y="0"/>
+                </set-val-11-1>
+                <set-val-11-2 comment="false" x="26" y="77">
+                    <get-byobval-11-16-2 comment="false" id="0" x="0" y="0"/>
+                </set-val-11-2>
+            </group>
+            <get-byobval-11-16-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-11-16-1 comment="false" id="1" x="0" y="0"/>
+            <get-byobval-11-16-2 comment="false" id="2" x="0" y="0"/>
+        </receiver-1-16>
+    </group>
+    <group eventID="1" id="-1">
+        <get-val-11-1 comment="false" x="178" y="184"/>
+        <get-val-11-2 comment="false" x="223" y="175"/>
+    </group>
+    <group eventID="2" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="2" id="-1">
+                        <stop comment="false" x="37" y="73"/>
+                    </group>
+                    <value comment="false" id="0" x="0" y="0">
+                        <int id="0" val="1"/>
+                        <int id="1" val="1"/>
+                    </value>
+                </if>
+                <if comment="false" x="26" y="105">
+                    <group eventID="2" id="-1">
+                        <die comment="false" x="37" y="148">
+                            <get-val-11-1 comment="false" id="0" x="0" y="0"/>
+                        </die>
+                        <stop comment="false" x="37" y="180"/>
+                    </group>
+                    <not comment="false" id="0" x="0" y="0">
+                        <isalive comment="false" id="0" x="0" y="0">
+                            <get-val-11-1 comment="false" id="0" x="0" y="0"/>
+                        </isalive>
+                    </not>
+                </if>
+                <set-val-11-3 comment="false" x="26" y="212">
+                    <minus comment="false" id="0" x="0" y="0">
+                        <get-xy comment="false" id="0" x="0" y="0">
+                            <get-val-11-1 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="2"/>
+                        </get-xy>
+                        <get-xy comment="false" id="1" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="2"/>
+                        </get-xy>
+                    </minus>
+                </set-val-11-3>
+                <set-val-11-4 comment="false" x="26" y="255">
+                    <minus comment="false" id="0" x="0" y="0">
+                        <get-xy comment="false" id="0" x="0" y="0">
+                            <get-val-11-1 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="3"/>
+                        </get-xy>
+                        <get-xy comment="false" id="1" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="3"/>
+                        </get-xy>
+                    </minus>
+                </set-val-11-4>
+                <if comment="false" x="26" y="298">
+                    <group eventID="2" id="-1">
+                        <custom-8 comment="false" x="37" y="338">
+                            <get-val-11-1 comment="false" id="0" x="0" y="0"/>
+                            <get-val-11-2 comment="false" id="1" x="0" y="0"/>
+                        </custom-8>
+                        <die comment="false" x="37" y="370">
+                            <ACTOR eid="this" id="0"/>
+                        </die>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <less comment="false" id="0" x="0" y="0">
+                            <abs comment="false" id="0" x="0" y="0">
+                                <get-val-11-3 comment="false" id="0" x="0" y="0"/>
+                            </abs>
+                            <get-val-11-5 comment="false" id="1" x="0" y="0"/>
+                        </less>
+                        <less comment="false" id="1" x="0" y="0">
+                            <abs comment="false" id="0" x="0" y="0">
+                                <get-val-11-4 comment="false" id="0" x="0" y="0"/>
+                            </abs>
+                            <get-val-11-5 comment="false" id="1" x="0" y="0"/>
+                        </less>
+                    </and>
+                </if>
+                <else comment="false" x="26" y="409">
+                    <group eventID="2" id="-1">
+                        <setvel comment="false" x="37" y="429">
+                            <ACTOR eid="this" id="0"/>
+                            <to-degreesradians comment="false" id="1" x="0" y="0">
+                                <int id="0" val="0"/>
+                                <atan2 comment="false" id="1" x="0" y="0">
+                                    <get-val-11-4 comment="false" id="0" x="0" y="0"/>
+                                    <get-val-11-3 comment="false" id="1" x="0" y="0"/>
+                                </atan2>
+                            </to-degreesradians>
+                            <get-val-11-6 comment="false" id="2" x="0" y="0"/>
+                        </setvel>
+                    </group>
+                </else>
+            </group>
+        </step>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>

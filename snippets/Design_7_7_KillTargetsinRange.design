@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <create-region comment="false" x="26" y="40">
+                    <minus comment="false" id="0" x="0" y="0">
+                        <get-xy comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="2"/>
+                        </get-xy>
+                        <get-val-6-1 comment="false" id="1" x="0" y="0"/>
+                    </minus>
+                    <minus comment="false" id="1" x="0" y="0">
+                        <get-xy comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="3"/>
+                        </get-xy>
+                        <get-val-6-1 comment="false" id="1" x="0" y="0"/>
+                    </minus>
+                    <times comment="false" id="2" x="0" y="0">
+                        <int id="0" val="2"/>
+                        <get-val-6-1 comment="false" id="1" x="0" y="0"/>
+                    </times>
+                    <times comment="false" id="3" x="0" y="0">
+                        <int id="0" val="2"/>
+                        <get-val-6-1 comment="false" id="1" x="0" y="0"/>
+                    </times>
+                </create-region>
+                <set-val-6-2 comment="false" x="26" y="78">
+                    <REGION eid="lastcreated" id="0"/>
+                </set-val-6-2>
+            </group>
+        </init>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <event-group-region comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <die comment="false" x="26" y="47">
+                    <actor-entered-exited comment="false" id="0" x="0" y="0"/>
+                </die>
+            </group>
+            <int id="0" val="0"/>
+            <REGION eid="this" id="1"/>
+            <GROUP eid="5" id="2"/>
+        </event-group-region>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>
