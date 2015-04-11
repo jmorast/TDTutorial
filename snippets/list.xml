@@ -172,8 +172,8 @@
             <receiver blockID="9" id="8"/>
         </blocks>
         <events>
-            <event displayName="Drawing" enabled="true" id="16" name="draw" order="3" repeats="true"/>
             <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
+            <event displayName="Drawing" enabled="true" id="16" name="draw" order="3" repeats="true"/>
             <event displayName="Death" enabled="true" id="18" name="event-custom" order="16" repeats="true"/>
             <event displayName="Heal" enabled="true" id="5" name="receiver-1-18" order="6" repeats="true"/>
             <event displayName="Damage" enabled="true" id="6" name="receiver-2-20" order="4" repeats="true"/>
@@ -237,8 +237,8 @@
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Distance X" hidden="true" id="12" name="_DistanceX" order="9"/>
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Distance Y" hidden="true" id="13" name="_DistanceY" order="10"/>
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Distance" hidden="true" id="14" name="_Distance" order="11"/>
-        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Direction" hidden="true" id="15" name="_Direction" order="12"/>
         <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Direction" hidden="true" id="15" name="_Direction" order="12"/>
         <number default="10.0" defaultValue="10.0" desc="The default speed to reach any node." dropdown="" fullname="Default Speed" hidden="false" id="17" name="_DefaultSpeed" order="21"/>
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Current Speed" hidden="true" id="19" name="_CurrentSpeed" order="14"/>
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Current Node" hidden="true" id="18" name="_CurrentNode" order="13"/>
@@ -254,11 +254,11 @@
         </blocks>
         <events>
             <event displayName="Custom Block" enabled="true" id="17" name="event-custom-block" order="16" repeats="true"/>
-            <event displayName="Custom Block" enabled="true" id="16" name="event-custom-block" order="3" repeats="true"/>
             <event displayName="Drawing" enabled="true" id="1" name="draw" order="18" repeats="true"/>
+            <event displayName="Custom Block" enabled="true" id="16" name="event-custom-block" order="3" repeats="true"/>
             <event displayName="Updated" enabled="true" id="2" name="step" order="2" repeats="true"/>
-            <event displayName="Custom Block" enabled="true" id="18" name="event-custom-block" order="17" repeats="true"/>
             <event displayName="Created" enabled="true" id="3" name="init" order="1" repeats="true"/>
+            <event displayName="Custom Block" enabled="true" id="18" name="event-custom-block" order="17" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_14_14_AlwaysSimulate" classname="scripts.Design_14_14_AlwaysSimulate" desc="Allows the actor to simulate even when off screen." description="Allows the actor to simulate even when off screen." design="true" drawOrder="0" id="14" name="Always Simulate" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
@@ -297,6 +297,44 @@
             <event displayName="execute_wave" enabled="true" id="3" name="event-custom-block" order="3" repeats="true"/>
             <event displayName="spawn_enemy" enabled="true" id="4" name="event-custom-block" order="4" repeats="true"/>
             <event displayName="activate_enemy" enabled="true" id="5" name="event-custom-block" order="5" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_19_19_CreateTowerBehavior" classname="scripts.Design_19_19_CreateTowerBehavior" desc="" description="" design="true" drawOrder="0" id="19" name="Create Tower Behavior" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
+        <actortype default="" defaultValue="" desc="" dropdown="" fullname="Button 1" hidden="false" id="1" name="_Button1" order="1"/>
+        <actortype default="" defaultValue="" desc="" dropdown="" fullname="Button 2" hidden="false" id="2" name="_Button2" order="2"/>
+        <actortype default="" defaultValue="" desc="" dropdown="" fullname="Button 3" hidden="false" id="3" name="_Button3" order="3"/>
+        <actor default="" defaultValue="" desc="" dropdown="" fullname="b1" hidden="true" id="4" name="_b1" order="4"/>
+        <actor default="" defaultValue="" desc="" dropdown="" fullname="b2" hidden="true" id="5" name="_b2" order="5"/>
+        <actor default="" defaultValue="" desc="" dropdown="" fullname="b3" hidden="true" id="6" name="_b3" order="6"/>
+        <text default="" defaultValue="" desc="" dropdown="" fullname="Button 1 Clicked Event" hidden="false" id="7" name="_Button1ClickedEvent" order="7"/>
+        <text default="" defaultValue="" desc="" dropdown="" fullname="Button 2 Clicked Event" hidden="false" id="8" name="_Button2ClickedEvent" order="8"/>
+        <text default="" defaultValue="" desc="" dropdown="" fullname="Button 3 Clicked Event" hidden="false" id="9" name="_Button3ClickedEvent" order="9"/>
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="Animation Duragion" hidden="false" id="10" name="_AnimationDuragion" order="10"/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="Buttons Visable?" hidden="true" id="11" name="_ButtonsVisable" order="11"/>
+        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <blocks>
+            <receiver blockID="37" id="1"/>
+            <receiver blockID="38" id="2"/>
+        </blocks>
+        <events>
+            <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
+            <event displayName="show_buttons" enabled="true" id="2" name="event-custom-block" order="5" repeats="true"/>
+            <event displayName="hide_buttons" enabled="true" id="3" name="event-custom-block" order="6" repeats="true"/>
+            <event displayName="Click" enabled="true" id="4" name="event-mouse-press-release" order="2" repeats="true"/>
+            <event displayName="Actor Created" enabled="true" id="5" name="event-actor-create-kill" order="3" repeats="true"/>
+            <event displayName="Custom Event" enabled="true" id="6" name="event-custom" order="4" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_35" classname="scripts.ActorEvents_35" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="18" name="ActorEvents_35" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_20_20_ButtonFeedback" classname="scripts.Design_20_20_ButtonFeedback" desc="" description="" design="true" drawOrder="0" id="20" name="Button Feedback" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events>
+            <event displayName="On Actor" enabled="true" id="1" name="event-mouse-enter-exit-actor" order="1" repeats="true"/>
+            <event displayName="On Actor" enabled="true" id="2" name="event-mouse-enter-exit-actor" order="2" repeats="true"/>
         </events>
     </snippet>
 </pack>

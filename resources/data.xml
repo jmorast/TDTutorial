@@ -239,8 +239,8 @@
                 <prop id="12" list="0" val="-1"/>
                 <prop id="13" list="0" val=""/>
                 <prop id="14" list="0" val="-1"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="15" list="0" val="-1"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="17" list="0" val="false"/>
                 <prop id="16" list="0" val="-1"/>
                 <prop id="19" list="0" val="0.0"/>
@@ -274,6 +274,32 @@
             </s>
         </snippets>
     </actor>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="18" fixedrot="false" fric="0.2" gid="3" id="35" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Create Tower Button" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="36" static="false">
+        <snippets>
+            <s enabled="true" id="19">
+                <prop id="1" list="0" val="2"/>
+                <prop id="2" list="0" val="2"/>
+                <prop id="3" list="0" val="2"/>
+                <prop id="4" list="0" val=""/>
+                <prop id="5" list="0" val=""/>
+                <prop id="6" list="0" val=""/>
+                <prop id="7" list="0" val="create_blue"/>
+                <prop id="8" list="0" val="create_blue"/>
+                <prop id="9" list="0" val="create_blue"/>
+                <prop id="10" list="0" val=".5"/>
+                <prop id="11" list="0" val="false"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="20">
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="48" id="36" name="Create Tower Button" shared="false" width="48">
+        <anim across="1" down="1" durations="100" height="48" id="0" loop="true" name="Animation 0" numframes="1" originx="24" originy="24" sync="false" version="2" width="48">
+            <poly data="4,0,0,48,0,48,48,0,48" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
     <custom-block blocktag="custom-8" blocktype="ACTION" code="~.say(&quot;Health Manager&quot;, &quot;_customBlock_Damage&quot;, [~]);" desc="Subtracts a specific amount of health from the Actor." global="false" gui="Damage %0 By %1" id="8" message="Damage" name="Damage" oid="-1" return="VOID" shared="false" snippetID="8">
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Amount" order="1" type="NUMBER"/>
@@ -369,10 +395,10 @@
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
             <s enabled="true" id="13">
-                <prop id="1" list="1" val=""/>
+                <prop id="1" list="0" val=""/>
                 <prop id="2" list="0" val="0.0"/>
                 <prop id="3" list="0" val="0.0"/>
-                <prop id="4" list="1" val=""/>
+                <prop id="4" list="0" val=""/>
                 <prop id="5" list="0" val="0.0"/>
                 <prop id="6" list="0" val="0.0"/>
                 <prop id="7" list="0" val="false"/>
@@ -382,8 +408,8 @@
                 <prop id="12" list="0" val="0.0"/>
                 <prop id="13" list="0" val="0.0"/>
                 <prop id="14" list="0" val="0.0"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="15" list="0" val="0.0"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="17" list="0" val="5"/>
                 <prop id="19" list="0" val="0.0"/>
                 <prop id="18" list="0" val="0.0"/>
@@ -422,6 +448,9 @@
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Amount" order="1" type="NUMBER"/>
     </custom-block>
+    <custom-block blocktag="custom-38" blocktype="ACTION" code="~.say(&quot;Create Tower Behavior&quot;, &quot;_customBlock_hide_buttons&quot;);" desc="" global="false" gui="hide buttons for %0" id="38" message="hide_buttons" name="hide_buttons" oid="-1" return="VOID" shared="false" snippetID="19">
+        <blank name="Self" order="0" type="ACTOR"/>
+    </custom-block>
     <custom-block blocktag="custom-18" blocktype="NORMAL" code="cast((~.say(&quot;Shoot Targets in Range&quot;, &quot;_customBlock_Random_Target&quot;)), Actor)" desc="" global="false" gui="find random target in range" id="18" message="Random_Target" name="Random_Target" oid="-1" return="ACTOR" shared="false" snippetID="6">
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
@@ -442,6 +471,9 @@
         <blank name="Target" order="1" type="ACTOR"/>
         <blank name="Amount of Damage" order="2" type="NUMBER"/>
     </custom-block>
+    <custom-block blocktag="custom-37" blocktype="ACTION" code="~.say(&quot;Create Tower Behavior&quot;, &quot;_customBlock_show_buttons&quot;);" desc="" global="false" gui="show buttons for %0" id="37" message="show_buttons" name="show_buttons" oid="-1" return="VOID" shared="false" snippetID="19">
+        <blank name="Self" order="0" type="ACTOR"/>
+    </custom-block>
     <custom-block blocktag="custom-33" blocktype="ACTION" code="~.say(&quot;Spawn Enemies&quot;, &quot;_customBlock_spawn_enemy&quot;, [~]);" desc="" global="false" gui="make %0 spawn enemy of type %1" id="33" message="spawn_enemy" name="spawn_enemy" oid="-1" return="VOID" shared="false" snippetID="16">
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Type" order="1" type="TEXT"/>
@@ -449,7 +481,7 @@
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="15" fixedrot="false" fric="0.2" gid="3" id="29" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Spawning Pool" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="30" static="false">
         <snippets>
             <s enabled="true" id="16">
-                <prop id="1" list="0" val="5"/>
+                <prop id="1" list="0" val="2"/>
                 <prop id="6" list="1" val=""/>
                 <prop id="7" list="1" val=""/>
                 <prop id="8" list="0" val="0"/>

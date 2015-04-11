@@ -11,7 +11,6 @@
     <terrainRegions/>
     <actors>
         <actor a="0.0" aid="5" c="false" group="4" id="2" name="Bunker Blue 5" sx="1.0" sy="1.0" x="135" y="163" z="1"/>
-        <actor a="0.0" aid="6" c="false" group="4" id="2" name="Bunker Blue 6" sx="1.0" sy="1.0" x="491" y="200" z="1"/>
         <actor a="0.0" aid="8" c="true" group="3" id="29" name="Spawning Pool 8" sx="1.2" sy="1.6" x="650" y="72" z="1">
             <snippets>
                 <s enabled="true" id="16">
@@ -39,6 +38,7 @@
                 <s enabled="true" id="15"/>
             </snippets>
         </actor>
+        <actor a="0.0" aid="9" c="false" group="3" id="35" name="Create Tower Button 9" sx="1.0" sy="1.0" x="396" y="265" z="1"/>
     </actors>
     <snippets>
         <s enabled="true" id="7">

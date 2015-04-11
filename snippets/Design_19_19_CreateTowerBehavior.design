@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <create-actor3 comment="false" x="26" y="40">
+                    <ACTORTYPE eid="var" id="0" vid="1"/>
+                    <get-xy comment="false" id="1" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="0"/>
+                    </get-xy>
+                    <get-xy comment="false" id="2" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="1"/>
+                    </get-xy>
+                    <int id="3" val="0"/>
+                </create-actor3>
+                <set-val-19-4 comment="false" x="26" y="80">
+                    <ACTOR eid="lastcreated" id="0"/>
+                </set-val-19-4>
+                <toggle-image comment="false" x="26" y="107">
+                    <get-val-19-4 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="1"/>
+                </toggle-image>
+                <create-actor3 comment="false" x="26" y="139">
+                    <ACTORTYPE eid="var" id="0" vid="2"/>
+                    <get-xy comment="false" id="1" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="0"/>
+                    </get-xy>
+                    <get-xy comment="false" id="2" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="1"/>
+                    </get-xy>
+                    <int id="3" val="0"/>
+                </create-actor3>
+                <set-val-19-5 comment="false" x="26" y="179">
+                    <ACTOR eid="lastcreated" id="0"/>
+                </set-val-19-5>
+                <toggle-image comment="false" x="26" y="206">
+                    <get-val-19-5 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="1"/>
+                </toggle-image>
+                <create-actor3 comment="false" x="26" y="238">
+                    <ACTORTYPE eid="var" id="0" vid="3"/>
+                    <get-xy comment="false" id="1" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="0"/>
+                    </get-xy>
+                    <get-xy comment="false" id="2" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="1"/>
+                    </get-xy>
+                    <int id="3" val="0"/>
+                </create-actor3>
+                <set-val-19-6 comment="false" x="26" y="278">
+                    <ACTOR eid="lastcreated" id="0"/>
+                </set-val-19-6>
+                <toggle-image comment="false" x="26" y="305">
+                    <get-val-19-6 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="1"/>
+                </toggle-image>
+            </group>
+        </init>
+    </group>
+    <group eventID="1" id="5">
+        <set-val-19-4 comment="false" x="179" y="417">
+            <ACTOR eid="lastcreated" id="0"/>
+        </set-val-19-4>
+        <set-val-19-4 comment="false" x="179" y="444">
+            <ACTOR eid="lastcreated" id="0"/>
+        </set-val-19-4>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <receiver-1-37 comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <if comment="false" x="26" y="45">
+                    <group eventID="2" id="-1">
+                        <stop comment="false" x="37" y="70"/>
+                    </group>
+                    <get-val-19-11 comment="false" id="0" x="0" y="0"/>
+                </if>
+                <set-val-19-11 comment="false" x="26" y="102">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-19-11>
+                <toggle-image comment="false" x="26" y="127">
+                    <ACTOR eid="var" id="0" vid="4"/>
+                    <int id="1" val="0"/>
+                </toggle-image>
+                <moveToBy comment="false" x="26" y="154">
+                    <ACTOR eid="var" id="0" vid="4"/>
+                    <int id="1" val="0"/>
+                    <int id="2" val="-50"/>
+                    <int id="3" val="-50"/>
+                    <get-val-19-10 comment="false" id="4" x="0" y="0"/>
+                    <int id="5" val="7"/>
+                </moveToBy>
+            </group>
+            <get-byobval-19-37-0 comment="false" id="0" x="0" y="0"/>
+        </receiver-1-37>
+    </group>
+    <group eventID="2" id="3">
+        <toggle-image comment="false" x="38" y="303">
+            <ACTOR eid="var" id="0" vid="5"/>
+            <int id="1" val="0"/>
+        </toggle-image>
+        <toggle-image comment="false" x="38" y="330">
+            <ACTOR eid="var" id="0" vid="6"/>
+            <int id="1" val="0"/>
+        </toggle-image>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <receiver-2-38 comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <if comment="false" x="26" y="45">
+                    <group eventID="3" id="-1">
+                        <stop comment="false" x="37" y="75"/>
+                    </group>
+                    <not comment="false" id="0" x="0" y="0">
+                        <get-val-19-11 comment="false" id="0" x="0" y="0"/>
+                    </not>
+                </if>
+                <set-val-19-11 comment="false" x="26" y="107">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-19-11>
+                <moveToBy comment="false" x="26" y="132">
+                    <ACTOR eid="var" id="0" vid="4"/>
+                    <int id="1" val="1"/>
+                    <get-xy comment="false" id="2" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="0"/>
+                    </get-xy>
+                    <get-xy comment="false" id="3" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="1"/>
+                    </get-xy>
+                    <get-val-19-10 comment="false" id="4" x="0" y="0"/>
+                    <int id="5" val="1"/>
+                </moveToBy>
+                <dolater comment="false" x="26" y="172">
+                    <group eventID="3" id="-1">
+                        <toggle-image comment="false" x="37" y="204">
+                            <ACTOR eid="var" id="0" vid="4"/>
+                            <int id="1" val="1"/>
+                        </toggle-image>
+                    </group>
+                    <get-val-19-10 comment="false" id="0" x="0" y="0"/>
+                    <ACTOR eid="this" id="2"/>
+                </dolater>
+            </group>
+            <get-byobval-19-38-0 comment="false" id="0" x="0" y="0"/>
+        </receiver-2-38>
+    </group>
+    <group eventID="3" id="-1"/>
+    <group eventID="4" id="0">
+        <event-mouse-press-release comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <if comment="false" x="26" y="42">
+                    <group eventID="4" id="-1">
+                        <custom-37 comment="false" x="37" y="75">
+                            <ACTOR eid="this" id="0"/>
+                        </custom-37>
+                    </group>
+                    <amousestate comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="1"/>
+                    </amousestate>
+                </if>
+                <else comment="false" x="26" y="114">
+                    <group eventID="4" id="-1">
+                        <custom-38 comment="false" x="37" y="134">
+                            <ACTOR eid="this" id="0"/>
+                        </custom-38>
+                        <if comment="false" x="37" y="161">
+                            <group eventID="4" id="-1">
+                                <dolater comment="false" x="48" y="194">
+                                    <group eventID="4" id="-1">
+                                        <shout comment="false" x="59" y="226">
+                                            <ACTOR eid="this" id="0"/>
+                                            <get-val-19-7 comment="false" id="1" x="0" y="0"/>
+                                        </shout>
+                                    </group>
+                                    <get-val-19-10 comment="false" id="0" x="0" y="0"/>
+                                    <ACTOR eid="this" id="2"/>
+                                </dolater>
+                            </group>
+                            <amousestate comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="var" id="0" vid="4"/>
+                                <int id="1" val="0"/>
+                            </amousestate>
+                        </if>
+                    </group>
+                </else>
+            </group>
+            <int id="0" val="0"/>
+        </event-mouse-press-release>
+    </group>
+    <group eventID="4" id="-1"/>
+    <group eventID="5" id="0">
+        <event-actor-create-kill comment="false" x="15" y="15">
+            <group eventID="5" id="-1">
+                <die comment="false" x="26" y="42">
+                    <ACTOR eid="var" id="0" vid="4"/>
+                </die>
+                <die comment="false" x="26" y="69">
+                    <ACTOR eid="var" id="0" vid="5"/>
+                </die>
+                <die comment="false" x="26" y="96">
+                    <ACTOR eid="var" id="0" vid="6"/>
+                </die>
+            </group>
+            <int id="0" val="1"/>
+            <ACTOR eid="this" id="1"/>
+        </event-actor-create-kill>
+    </group>
+    <group eventID="5" id="-1"/>
+    <group eventID="6" id="0">
+        <event-custom comment="false" x="15" y="15">
+            <group eventID="6" id="-1">
+                <create-actor3 comment="false" x="26" y="40">
+                    <ACTORTYPE eid="2" id="0"/>
+                    <get-xy comment="false" id="1" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="0"/>
+                    </get-xy>
+                    <get-xy comment="false" id="2" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="1"/>
+                    </get-xy>
+                    <int id="3" val="0"/>
+                </create-actor3>
+                <die comment="false" x="26" y="80">
+                    <ACTOR eid="this" id="0"/>
+                </die>
+            </group>
+            <int id="0" val="create_blue"/>
+        </event-custom>
+    </group>
+    <group eventID="6" id="-1"/>
+</groups>
