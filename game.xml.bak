@@ -56,6 +56,13 @@
         <group desc="" id="1" name="Enemies" type="actor">
             <r id="0"/>
             <r id="24"/>
+            <r id="45"/>
+        </group>
+        <group desc="" id="2" name="GUI" type="actor">
+            <r id="35"/>
+            <r id="39"/>
+            <r id="43"/>
+            <r id="41"/>
         </group>
     </folders>
     <packs/>
@@ -63,6 +70,7 @@
         <group desc="" id="4" name="Towers"/>
         <group desc="" id="5" name="Enemies"/>
         <group desc="" id="6" name="Bullets"/>
+        <group desc="" id="7" name="Visual Effects"/>
     </groups>
     <cgroups>
         <cgroup g1="1" g2="3"/>
@@ -114,7 +122,7 @@
         <poly id="24" name="Tri 60-2R Inv" pts="0.0,0.0#0.5,1.0#1.0,1.0#1.0,0.0"/>
     </collisions>
     <atlases>
-        <atlas allScenes="true" desc="" dirty="true" id="0" members="0,2,12,23,24,29,35," name="Main Atlas" pvr="false" resize="0" target="0"/>
+        <atlas allScenes="true" desc="" dirty="true" id="0" members="0,2,12,23,24,29,35,39,43,41,47,45," name="Main Atlas" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="1" members="" name="Atlas 2" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="2" members="" name="Atlas 3" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="3" members="" name="Atlas 4" pvr="false" resize="0" target="0"/>
