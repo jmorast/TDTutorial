@@ -222,10 +222,6 @@
             <event displayName="Updated" enabled="true" id="2" name="step" order="2" repeats="true"/>
         </events>
     </snippet>
-    <snippet attachedevent="true" class="scripts.ActorEvents_24" classname="scripts.ActorEvents_24" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="12" name="ActorEvents_24" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
-        <blocks/>
-        <events/>
-    </snippet>
     <snippet attachedevent="false" class="scripts.Design_13_13_FollowPath" classname="scripts.Design_13_13_FollowPath" desc="Make the actor follow a given path." description="Make the actor follow a given path." design="true" drawOrder="0" id="13" name="Follow Path" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
         <list default="list" defaultValue="list" desc="The list of coordinates for the nodes of the path. &lt;br /&gt;&lt;br /&gt;&#10;Each entry must be of type Text and must be one of the following formats:&lt;br /&gt;&#10;&lt;pre&gt;  &lt;var&gt;X,Y&lt;/var&gt;&lt;br /&gt;&lt;/pre&gt;&#10;or&lt;br /&gt;&#10;&lt;pre&gt;  &lt;var&gt;X,Y,Speed&lt;/var&gt;&lt;br /&gt;&lt;/pre&gt;&#10;&lt;var&gt;X&lt;/var&gt; and &lt;var&gt;Y&lt;/var&gt; are the scene coordinates of the node.&lt;br /&gt;&#10;&lt;var&gt;Speed&lt;/var&gt; is optional and is the speed to reach this node. If no &lt;var&gt;Speed&lt;/var&gt; is specified the &lt;var&gt;Default Speed&lt;/var&gt; will be used.&lt;br /&gt;&#10;You can use the custom blocks that come with this behavior to add nodes or clear the path.&#10;" dropdown="" fullname="Coordinates" hidden="false" id="1" name="_Coordinates" order="20"/>
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="X" hidden="true" id="2" name="_X" order="1"/>
@@ -412,6 +408,10 @@
             <event displayName="FormatScore" enabled="true" id="16" name="event-custom" order="4" repeats="true"/>
         </events>
     </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_61" classname="scripts.ActorEvents_61" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="29" name="ActorEvents_61" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
     <snippet attachedevent="false" class="scripts.Design_28_28_EnemyConfiguration" classname="scripts.Design_28_28_EnemyConfiguration" desc="" description="" design="true" drawOrder="0" id="28" name="Enemy Configuration" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
         <number default="0" defaultValue="0" desc="" dropdown="" fullname="Hitpoints" hidden="false" id="1" name="_Hitpoints" order="1"/>
         <number default="0" defaultValue="0" desc="" dropdown="" fullname="Points When Killed" hidden="false" id="2" name="_PointsWhenKilled" order="2"/>
@@ -421,6 +421,20 @@
         <events>
             <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
             <event displayName="Actor Created" enabled="true" id="2" name="event-actor-create-kill" order="2" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_30_30_NumberofLivesManager" classname="scripts.Design_30_30_NumberofLivesManager" desc="" description="" design="true" drawOrder="0" id="30" name="Number of Lives Manager" oid="-1" package="scripts" scenespecific="false" shared="false" type="scene">
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="Number of Lives" hidden="false" id="1" name="_NumberofLives" order="0"/>
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="Current Number of Lives" hidden="true" id="2" name="_CurrentNumberofLives" order="1"/>
+        <actor default="" defaultValue="" desc="" dropdown="" fullname="Number of Lives Actor" hidden="true" id="3" name="_NumberofLivesActor" order="2"/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="No More Lives Triggered?" hidden="true" id="4" name="_NoMoreLivesTriggered" order="3"/>
+        <blocks>
+            <receiver blockID="63" id="1"/>
+        </blocks>
+        <events>
+            <event displayName="Custom Block" enabled="true" id="1" name="event-custom-block" order="1" repeats="true"/>
+            <event displayName="Created" enabled="true" id="2" name="init" order="2" repeats="true"/>
+            <event displayName="Drawing" enabled="true" id="3" name="draw" order="3" repeats="true"/>
         </events>
     </snippet>
 </pack>

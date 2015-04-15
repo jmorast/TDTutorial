@@ -203,80 +203,6 @@
     <custom-block blocktag="custom-28" blocktype="ACTION" code="~.say(&quot;Follow Path&quot;, &quot;_customBlock_ClearPath&quot;);" desc="" global="false" gui="clear path for %0" id="28" message="ClearPath" name="ClearPath" oid="-1" return="VOID" shared="false" snippetID="13">
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="12" fixedrot="true" fric="0.2" gid="5" id="24" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="Copy of Female Blue" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="25" static="false">
-        <snippets>
-            <s enabled="true" id="2">
-                <prop id="1" list="0" val="1.0"/>
-                <prop id="2" list="0" val="2.0"/>
-                <prop id="3" list="0" val="1.0"/>
-                <prop id="4" list="0" val="2.0"/>
-                <prop id="5" list="0" val="true"/>
-                <prop id="6" list="0" val="10.0"/>
-                <prop id="9" list="0" val="false"/>
-                <prop id="10" list="0" val="false"/>
-                <prop id="11" list="0" val="5.0"/>
-                <prop id="13" list="0" val="true"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-                <prop id="21" list="0" val="0"/>
-                <prop id="20" list="0" val="0"/>
-            </s>
-            <s enabled="true" id="3">
-                <prop id="3" list="0" val="16.0"/>
-                <prop id="4" list="0" val="16.0"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-            <s enabled="true" id="4">
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-            <s enabled="true" id="8">
-                <prop id="1" list="0" val="100"/>
-                <prop id="2" list="0" val="100"/>
-                <prop id="3" list="0" val="3.0"/>
-                <prop id="4" list="0" val="Healed"/>
-                <prop id="5" list="0" val="Damaged"/>
-                <prop id="7" list="0" val="Kill"/>
-                <prop id="8" list="0" val="false"/>
-                <prop id="9" list="0" val="0.5"/>
-                <prop id="10" list="0" val="true"/>
-                <prop id="11" list="0" val="false"/>
-                <prop id="12" list="0" val="-1"/>
-                <prop id="13" list="0" val=""/>
-                <prop id="14" list="0" val="-1"/>
-                <prop id="15" list="0" val="-1"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-                <prop id="17" list="0" val="false"/>
-                <prop id="16" list="0" val="-1"/>
-                <prop id="19" list="0" val="0.0"/>
-                <prop id="18" list="0" val="0.0"/>
-                <prop id="20" list="0" val=""/>
-                <prop id="23" list="0" val="false"/>
-                <prop id="22" list="0" val="0.0"/>
-                <prop id="25" list="0" val="0.0"/>
-                <prop id="24" list="0" val="-1"/>
-                <prop id="27" list="0" val="-2"/>
-                <prop id="26" list="0" val="Actor"/>
-                <prop id="29" list="0" val="-8"/>
-                <prop id="28" list="0" val="1.0"/>
-                <prop id="31" list="0" val="5.0"/>
-                <prop id="30" list="0" val="20"/>
-                <prop id="32" list="0" val="Horizontal"/>
-                <prop id="39" list="0" val="0,0,0,255"/>
-                <prop id="42" list="0" val="51,153,102,255"/>
-                <prop id="43" list="0" val="255,153,0,255"/>
-                <prop id="41" list="0" val="0,128,0,255"/>
-                <prop id="46" list="0" val="true"/>
-                <prop id="44" list="0" val="255,0,0,255"/>
-                <prop id="45" list="0" val="255,255,255,255"/>
-            </s>
-            <s enabled="true" id="9">
-                <prop id="1" list="0" val="Damaged"/>
-                <prop id="2" list="0" val="0.1"/>
-                <prop id="3" list="0" val="3"/>
-                <prop id="4" list="0" val="0"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-        </snippets>
-    </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="48" id="40" name="Create Blue Button" shared="false" width="48">
         <anim across="1" down="1" durations="100" height="48" id="0" loop="true" name="Animation 0" numframes="1" originx="24" originy="24" sync="false" version="2" width="48">
             <poly data="4,0,0,48,0,48,48,0,48" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
@@ -343,27 +269,13 @@
             </s>
         </snippets>
     </actor>
+    <custom-block blocktag="custom-63" blocktype="ACTION" code="sayToScene(&quot;Number of Lives Manager&quot;, &quot;_customBlock_decrease_lives&quot;, [~]);" desc="" global="false" gui="decrease number of lives by %0" id="63" message="decrease_lives" name="decrease_lives" oid="-1" return="VOID" shared="false" snippetID="30">
+        <blank name="Amount" order="0" type="NUMBER"/>
+    </custom-block>
     <custom-block blocktag="custom-52" blocktype="ACTION" code="sayToScene(&quot;Score Manager&quot;, &quot;_customBlock_DecrementScore&quot;, [~]);" desc="" global="false" gui="Decrement Score By %0" id="52" message="DecrementScore" name="DecrementScore" oid="-1" return="VOID" shared="false" snippetID="26">
         <blank name="Amount" order="0" type="NUMBER"/>
     </custom-block>
     <sprite atlasID="0" default="4" defaultAnimation="4" desc="" height="19" id="1" name="Enemy 2" shared="false" width="16">
-        <anim across="4" down="1" durations="150,150,150,150" height="19" id="0" loop="true" name="Down" numframes="4" originx="8" originy="10" sync="false" version="1" width="64">
-            <poly data="4,0,0,16,0,16,20,0,20" density="0.1" fric="0.2" gid="-1000" id="0" name="Down" rest="0.0" sensor="false"/>
-        </anim>
-        <anim across="4" down="1" durations="150,150,150,150" height="19" id="1" loop="true" name="Up" numframes="4" originx="8" originy="10" sync="false" version="1" width="64">
-            <poly data="4,0,0,16,0,16,20,0,20" density="0.1" fric="0.2" gid="-1000" id="0" name="Up" rest="0.0" sensor="false"/>
-        </anim>
-        <anim across="4" down="1" durations="150,150,150,150" height="19" id="2" loop="true" name="Left" numframes="4" originx="7" originy="10" sync="false" version="1" width="56">
-            <poly data="4,0,0,14,0,14,20,0,20" density="0.1" fric="0.2" gid="-1000" id="0" name="Left" rest="0.0" sensor="false"/>
-        </anim>
-        <anim across="4" down="1" durations="150,150,150,150" height="19" id="3" loop="true" name="Right" numframes="4" originx="7" originy="10" sync="false" version="1" width="56">
-            <poly data="4,0,0,14,0,14,20,0,20" density="0.1" fric="0.2" gid="-1000" id="0" name="Right" rest="0.0" sensor="false"/>
-        </anim>
-        <anim across="1" down="1" durations="100" height="19" id="4" loop="true" name="Idle" numframes="1" originx="8" originy="9" sync="false" version="1" width="16">
-            <poly data="4,0,0,16,0,16,19,0,19" density="0.1" fric="0.2" gid="-1000" id="0" name="Idle" rest="0.0" sensor="false"/>
-        </anim>
-    </sprite>
-    <sprite atlasID="0" default="4" defaultAnimation="4" desc="" height="19" id="25" name="Enemy 2" shared="false" width="16">
         <anim across="4" down="1" durations="150,150,150,150" height="19" id="0" loop="true" name="Down" numframes="4" originx="8" originy="10" sync="false" version="1" width="64">
             <poly data="4,0,0,16,0,16,20,0,20" density="0.1" fric="0.2" gid="-1000" id="0" name="Down" rest="0.0" sensor="false"/>
         </anim>
@@ -402,11 +314,11 @@
                 <prop id="11" list="0" val="false"/>
                 <prop id="12" list="0" val="-1"/>
                 <prop id="13" list="0" val=""/>
-                <prop id="14" list="0" val="No Sound"/>
-                <prop id="15" list="0" val="No Sound"/>
+                <prop id="14" list="0" val="-1"/>
+                <prop id="15" list="0" val="-1"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="17" list="0" val="false"/>
-                <prop id="16" list="0" val="No Sound"/>
+                <prop id="16" list="0" val="-1"/>
                 <prop id="19" list="0" val="0.0"/>
                 <prop id="18" list="0" val="0.0"/>
                 <prop id="20" list="0" val=""/>
@@ -517,6 +429,15 @@
     <custom-block blocktag="custom-53" blocktype="ACTION" code="sayToScene(&quot;Score Manager&quot;, &quot;_customBlock_IncrementScore&quot;, [~]);" desc="" global="false" gui="Increment Score By %0" id="53" message="IncrementScore" name="IncrementScore" oid="-1" return="VOID" shared="false" snippetID="26">
         <blank name="Amount" order="0" type="NUMBER"/>
     </custom-block>
+    <font alphabet=" !&quot;#$%&amp;'()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĊċČčĎďĐđĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħĨĩĪīĬĭĮįİıĲĳĴĵĶķĸĹĺĻļĽľĿŀŁłŃńŅņŇňŉŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŲųŴŵŶŷŸŹźŻżŽžſ" atlasID="0" desc="" height="32" id="60" name="Lives Font" offsets="0|0|0|,12|0|12,19|0|19,32|0|32,55|0|55,70|0|70,89|0|89,107|0|107,114|0|114,124|0|124,133|0|133,145|0|145,157|0|157,164|0|164,173|0|173,180|0|180,194|0|194,209|0|209,219|0|219,234|0|234,250|0|250,265|0|265,280|0|280,295|0|295,310|0|310,325|0|325,340|0|340,347|0|347,354|0|354,363|0|363,376|0|376,386|0|386,401|0|401,419|0|419,437|0|437,452|0|452,467|0|467,482|0|482,497|0|497,512|0|512,527|0|527,542|0|542,549|0|549,560|0|560,575|0|575,590|0|590,613|0|613,628|0|628,643|0|643,658|0|658,673|0|673,688|0|688,703|0|703,718|0|718,733|0|733,747|0|747,769|0|769,784|0|784,798|0|798,813|0|813,824|0|824,838|0|838,849|0|849,864|0|864,882|0|882,890|0|890,908|0|908,923|0|923,938|0|938,953|0|953,968|0|968,983|0|983,998|0|998,1013|0|1013,1020|0|1020,1031|0|1031,1046|0|1046,1061|0|1061,1083|0|1083,1098|0|1098,1113|0|1113,1128|0|1128,1143|0|1143,1158|0|1158,1173|0|1173,1186|0|1186,1201|0|1201,1215|0|1215,1237|0|1237,1252|0|1252,1266|0|1266,1281|0|1281,1294|0|1294,1301|0|1301,1314|0|1314,1331|0|1331,1331|0|1331,1331|0|1331,1331|0|1331,1331|0|1331,1331|0|1331,1331|0|1331,1331|0|1331,1331|0|1331,1331|0|1331,1331|0|1331,1331|0|1331,1331|0|1331,1331|0|1331,1331|0|1331,1331|0|1331,1331|0|1331,1331|0|1331,1331|0|1331,1331|0|1331,1331|0|1331,1331|0|1331,1331|0|1331,1331|0|1331,1331|0|1331,1331|0|1331,1331|0|1331,1331|0|1331,1331|0|1331,1331|0|1331,1331|0|1331,1331|0|1331,1331|0|1331,1331|0|1331,1343|0|1343,1350|0|1350,1365|0|1365,1382|0|1382,1400|0|1400,1414|0|1414,1421|0|1421,1436|0|1436,1448|0|1448,1466|0|1466,1475|0|1475,1491|0|1491,1504|0|1504,1513|0|1513,1531|0|1531,1531|0|1531,1540|0|1540,1552|0|1552,1560|0|1560,1568|0|1568,1576|0|1576,1591|0|1591,1612|0|1612,1619|0|1619,1628|0|1628,1635|0|1635,1644|0|1644,1660|0|1660,1677|0|1677,1694|0|1694,1713|0|1713,1728|0|1728,1746|0|1746,1764|0|1764,1782|0|1782,1800|0|1800,1818|0|1818,1836|0|1836,1861|0|1861,1876|0|1876,1891|0|1891,1906|0|1906,1921|0|1921,1936|0|1936,1944|0|1944,1952|0|1952,1961|0|1961,1972|0|1972,1989|0|1989,2004|0|2004,2019|0|2019,2034|0|2034,2049|0|2049,2064|0|2064,2079|0|2079,2090|0|2090,2105|0|2105,2120|0|2120,2135|0|2135,2150|0|2150,2165|0|2165,2179|0|2179,2194|0|2194,2209|0|2209,2227|0|2227,2245|0|2245,2263|0|2263,2281|0|2281,2299|0|2299,2317|0|2317,2342|0|2342,2357|0|2357,2372|0|2372,2387|0|2387,2402|0|2402,2417|0|2417,2425|0|2425,2433|0|2433,2442|0|2442,2453|0|2453,2468|0|2468,2483|0|2483,2498|0|2498,2513|0|2513,2528|0|2528,2543|0|2543,2558|0|2558,2571|0|2571,2586|0|2586,2601|0|2601,2616|0|2616,2631|0|2631,2646|0|2646,2660|0|2660,2675|0|2675,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2689|0|2689,2710|0|2710,2731|0|2731,2731|0|2731,2731|0|2731,2731|0|2731,2731|0|2731,2731|0|2731,2731|0|2731,2731|0|2731,2731|0|2731,2731|0|2731,2731|0|2731,2731|0|2731,2731|0|2731,2746|0|2746,2761|0|2761,2761|0|2761,2761|0|2761,2761|0|2761,2761|0|2761,2761|0|2761,2761|0|2761,2761|0|2761,2761|0|2761,2761|0|2761,2761|0|2761,2761|0|2761,2761|0|2761,2761|0|2761,2761|0|2761,2761|0|2761,2761|0|2761,2761|0|2761,2761|0|2761,2761|0|2761,2761|0|2761,2761|0|2761,2761|0|2761,2775|0|2775,2775|0|2775,2775|0|2775,2775|0|2775,2775|0|2775,2790|0|2790" oid="-1" prerendered="false" rowHeight="32" shared="false"/>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="16" id="62" name="Number of Lives" shared="false" width="16">
+        <anim across="1" down="1" durations="100" height="16" id="0" loop="true" name="Animation 0" numframes="1" originx="8" originy="8" sync="false" version="2" width="16">
+            <poly data="4,0,0,16,0,16,16,0,16" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="29" fixedrot="false" fric="0.2" gid="7" id="61" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Number of Lives" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="62" static="false">
+        <snippets/>
+    </actor>
     <custom-block blocktag="custom-18" blocktype="NORMAL" code="cast((~.say(&quot;Shoot Targets in Range&quot;, &quot;_customBlock_Random_Target&quot;)), Actor)" desc="" global="false" gui="find random target in range" id="18" message="Random_Target" name="Random_Target" oid="-1" return="ACTOR" shared="false" snippetID="6">
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
