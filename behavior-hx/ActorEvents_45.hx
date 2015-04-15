@@ -68,59 +68,14 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class Design_9_9_FlickerwhenDamaged extends ActorScript
+class ActorEvents_45 extends ActorScript
 {          	
 	
-public var _DamagedEvent:String;
-
-public var _FlickerDelay:Float;
-
-public var _FlickerCount:Float;
-
-public var _CurrentFlickerCount:Float;
-    
-/* ========================= Custom Event ========================= */
-public function _customEvent_whenThisHears_DamagedEvent():Void
-{
-        _CurrentFlickerCount = asNumber(0);
-propertyChanged("_CurrentFlickerCount", _CurrentFlickerCount);
-        _customEvent_flicker();
-}
-
-    
-/* ========================= Custom Event ========================= */
-public function _customEvent_flicker():Void
-{
-        actor.disableActorDrawing();
-        runLater(1000 * _FlickerDelay, function(timeTask:TimedTask):Void {
-                    actor.enableActorDrawing();
-                    _CurrentFlickerCount += 1;
-propertyChanged("_CurrentFlickerCount", _CurrentFlickerCount);
-                    if((_CurrentFlickerCount < _FlickerCount))
-{
-                        runLater(1000 * _FlickerDelay, function(timeTask:TimedTask):Void {
-                                    _customEvent_flicker();
-}, actor);
-}
-
-}, actor);
-}
-
-
  
  	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
 		super(actor);
-		nameMap.set("Damaged Event", "_DamagedEvent");
-_DamagedEvent = "Damaged";
-nameMap.set("Flicker Delay", "_FlickerDelay");
-_FlickerDelay = 0.1;
-nameMap.set("Flicker Count", "_FlickerCount");
-_FlickerCount = 3.0;
-nameMap.set("Current Flicker Count", "_CurrentFlickerCount");
-_CurrentFlickerCount = 0.0;
-nameMap.set("Actor", "actor");
-
+		
 	}
 	
 	override public function init()
@@ -130,11 +85,6 @@ nameMap.set("Actor", "actor");
 	
 	override public function forwardMessage(msg:String)
 	{
-		if(msg == ("_customEvent_" + _DamagedEvent))
-{
-_customEvent_whenThisHears_DamagedEvent();
-return;
-}
-
+		
 	}
 }

@@ -68,19 +68,27 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class ActorEvents_0 extends ActorScript
+class Design_25_25_DeadEnemyFeedback extends ActorScript
 {          	
 	
  
  	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
 		super(actor);
-		
+		nameMap.set("Actor", "actor");
+
 	}
 	
 	override public function init()
 	{
-		
+		    
+/* ======================== When Creating ========================= */
+        actor.fadeTo(0, 2, Linear.easeNone);
+        actor.moveBy(0, -40, 2, Quad.easeIn);
+        runLater(1000 * 2, function(timeTask:TimedTask):Void {
+                    recycleActor(actor);
+}, actor);
+
 	}	      	
 	
 	override public function forwardMessage(msg:String)

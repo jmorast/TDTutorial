@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <ignore-screen-tolerance comment="false" x="26" y="40">
+                    <ACTOR eid="this" id="0"/>
+                </ignore-screen-tolerance>
+            </group>
+        </init>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <event-actor-create-kill comment="false" x="9" y="16">
+            <group eventID="2" id="-1">
+                <comment-short comment="false" x="20" y="43">
+                    <int id="0" val="Health Manager Settings"/>
+                </comment-short>
+                <set-attribute comment="false" x="20" y="63">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="Health Manager"/>
+                    <int id="2" val="_SpawnActorOnDeath"/>
+                    <true comment="false" id="3" x="0" y="0"/>
+                </set-attribute>
+                <set-attribute comment="false" x="20" y="95">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="Health Manager"/>
+                    <int id="2" val="_ActorTypeToSpawn"/>
+                    <pick-type comment="false" id="3" x="0" y="0">
+                        <ACTORTYPE eid="45" id="0"/>
+                    </pick-type>
+                </set-attribute>
+                <set-attribute comment="false" x="20" y="135">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="Health Manager"/>
+                    <int id="2" val="_ZeroHealthAction"/>
+                    <int id="3" val="Kill"/>
+                </set-attribute>
+                <set-attribute comment="false" x="20" y="162">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="Health Manager"/>
+                    <int id="2" val="_MaximumHealth"/>
+                    <get-val-28-1 comment="false" id="3" x="0" y="0"/>
+                </set-attribute>
+                <custom-5 comment="false" x="20" y="194">
+                    <ACTOR eid="this" id="0"/>
+                    <get-val-28-1 comment="false" id="1" x="0" y="0"/>
+                </custom-5>
+                <comment-short comment="false" x="20" y="226">
+                    <int id="0" val="Follow Path Settings"/>
+                </comment-short>
+                <set-attribute comment="false" x="20" y="246">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="Follow Path"/>
+                    <int id="2" val="_DefaultSpeed"/>
+                    <get-val-28-3 comment="false" id="3" x="0" y="0"/>
+                </set-attribute>
+                <set-attribute comment="false" x="20" y="278">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="Follow Path"/>
+                    <int id="2" val="_JumpToStart"/>
+                    <false comment="false" id="3" x="0" y="0"/>
+                </set-attribute>
+                <set-attribute comment="false" x="20" y="310">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="Follow Path"/>
+                    <int id="2" val="_Loop"/>
+                    <false comment="false" id="3" x="0" y="0"/>
+                </set-attribute>
+                <comment-short comment="false" x="20" y="342">
+                    <int id="0" val="Flicker When Damaged Settings"/>
+                </comment-short>
+                <custom-59 comment="false" x="20" y="362">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="3"/>
+                    <int id="2" val=".1"/>
+                    <int id="3" val="Damaged"/>
+                </custom-59>
+                <comment-short comment="false" x="20" y="389">
+                    <int id="0" val="Add Points When Killed Settings"/>
+                </comment-short>
+                <custom-57 comment="false" x="20" y="409">
+                    <ACTOR eid="this" id="0"/>
+                    <get-val-28-2 comment="false" id="1" x="0" y="0"/>
+                </custom-57>
+            </group>
+            <int id="0" val="0"/>
+            <ACTOR eid="this" id="1"/>
+        </event-actor-create-kill>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>

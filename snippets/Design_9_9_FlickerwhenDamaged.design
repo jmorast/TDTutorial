@@ -58,4 +58,24 @@
         </event-custom>
     </group>
     <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <receiver-1-59 comment="false" x="16" y="104">
+            <group eventID="3" id="-1">
+                <set-val-9-3 comment="false" x="27" y="134">
+                    <get-byobval-9-59-1 comment="false" id="0" x="0" y="0"/>
+                </set-val-9-3>
+                <set-val-9-2 comment="false" x="27" y="159">
+                    <get-byobval-9-59-2 comment="false" id="0" x="0" y="0"/>
+                </set-val-9-2>
+                <set-val-9-1 comment="false" x="27" y="184">
+                    <get-byobval-9-59-3 comment="false" id="0" x="0" y="0"/>
+                </set-val-9-1>
+            </group>
+            <get-byobval-9-59-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-9-59-1 comment="false" id="1" x="0" y="0"/>
+            <get-byobval-9-59-2 comment="false" id="2" x="0" y="0"/>
+            <get-byobval-9-59-3 comment="false" id="3" x="0" y="0"/>
+        </receiver-1-59>
+    </group>
+    <group eventID="3" id="-1"/>
 </groups>
