@@ -92,7 +92,7 @@
                     <ACTOR eid="var" id="0" vid="4"/>
                     <int id="1" val="0"/>
                     <int id="2" val="-50"/>
-                    <int id="3" val="-50"/>
+                    <int id="3" val="-35"/>
                     <get-val-19-10 comment="false" id="4" x="0" y="0"/>
                     <int id="5" val="7"/>
                 </moveToBy>
@@ -103,8 +103,8 @@
                 <moveToBy comment="false" x="26" y="213">
                     <ACTOR eid="var" id="0" vid="5"/>
                     <int id="1" val="0"/>
-                    <int id="2" val="-100"/>
-                    <int id="3" val="-100"/>
+                    <int id="2" val="0"/>
+                    <int id="3" val="-50"/>
                     <get-val-19-10 comment="false" id="4" x="0" y="0"/>
                     <int id="5" val="7"/>
                 </moveToBy>
@@ -116,7 +116,7 @@
                     <ACTOR eid="var" id="0" vid="6"/>
                     <int id="1" val="0"/>
                     <int id="2" val="50"/>
-                    <int id="3" val="50"/>
+                    <int id="3" val="-35"/>
                     <get-val-19-10 comment="false" id="4" x="0" y="0"/>
                     <int id="5" val="7"/>
                 </moveToBy>
