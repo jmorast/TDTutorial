@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <ignore-screen-tolerance comment="false" x="26" y="40">
+                    <ACTOR eid="this" id="0"/>
+                </ignore-screen-tolerance>
+                <set-val-34-1 comment="false" x="26" y="67">
+                    <minus comment="false" id="0" x="0" y="0">
+                        <div comment="false" id="0" x="0" y="0">
+                            <scene-wh comment="false" id="0" x="0" y="0">
+                                <int id="0" val="0"/>
+                            </scene-wh>
+                            <int id="1" val="2"/>
+                        </div>
+                        <get-wh comment="false" id="1" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="2"/>
+                        </get-wh>
+                    </minus>
+                </set-val-34-1>
+                <set-val-34-2 comment="false" x="26" y="110">
+                    <minus comment="false" id="0" x="0" y="0">
+                        <div comment="false" id="0" x="0" y="0">
+                            <scene-wh comment="false" id="0" x="0" y="0">
+                                <int id="0" val="1"/>
+                            </scene-wh>
+                            <int id="1" val="2"/>
+                        </div>
+                        <get-wh comment="false" id="1" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="3"/>
+                        </get-wh>
+                    </minus>
+                </set-val-34-2>
+                <set-xy comment="false" x="26" y="153">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="0"/>
+                    <get-val-34-1 comment="false" id="2" x="0" y="0"/>
+                </set-xy>
+                <set-xy comment="false" x="26" y="185">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="1"/>
+                    <int id="2" val="-400"/>
+                </set-xy>
+            </group>
+        </init>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="3" id="0">
+        <receiver-2-71 comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <moveToBy comment="false" x="26" y="45">
+                    <get-byobval-34-71-0 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="1"/>
+                    <get-val-34-1 comment="false" id="2" x="0" y="0"/>
+                    <get-val-34-2 comment="false" id="3" x="0" y="0"/>
+                    <get-val-34-3 comment="false" id="4" x="0" y="0"/>
+                    <int id="5" val="3"/>
+                </moveToBy>
+                <return comment="false" x="26" y="77">
+                    <get-val-34-3 comment="false" id="0" x="0" y="0"/>
+                </return>
+            </group>
+            <get-byobval-34-71-0 comment="false" id="0" x="0" y="0"/>
+        </receiver-2-71>
+    </group>
+    <group eventID="3" id="-1"/>
+</groups>

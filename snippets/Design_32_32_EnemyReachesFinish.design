@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <event-collide-actortogroup comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <if comment="false" x="26" y="47">
+                    <group eventID="1" id="-1">
+                        <stop comment="false" x="37" y="72"/>
+                    </group>
+                    <get-val-32-2 comment="false" id="0" x="0" y="0"/>
+                </if>
+                <set-val-32-2 comment="false" x="26" y="104">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-32-2>
+                <custom-63 comment="false" x="26" y="129">
+                    <get-val-32-1 comment="false" id="0" x="0" y="0"/>
+                </custom-63>
+                <actor-enabledisable-snippet comment="false" x="26" y="154">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="1"/>
+                    <int id="2" val="Health Manager"/>
+                </actor-enabledisable-snippet>
+                <actor-enabledisable-snippet comment="false" x="26" y="181">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="1"/>
+                    <int id="2" val="Add Points When Killed"/>
+                </actor-enabledisable-snippet>
+                <fadeInOut comment="false" x="26" y="208">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="1"/>
+                    <int id="2" val="1"/>
+                    <int id="3" val="0"/>
+                </fadeInOut>
+                <dolater comment="false" x="26" y="235">
+                    <group eventID="1" id="-1">
+                        <die comment="false" x="37" y="262">
+                            <ACTOR eid="this" id="0"/>
+                        </die>
+                    </group>
+                    <int id="0" val="2"/>
+                    <ACTOR eid="this" id="2"/>
+                </dolater>
+            </group>
+            <ACTOR eid="this" id="0"/>
+            <GROUP eid="8" id="1"/>
+        </event-collide-actortogroup>
+    </group>
+    <group eventID="1" id="-1"/>
+</groups>

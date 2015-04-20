@@ -39,7 +39,6 @@ import box2D.common.math.B2Vec2;
 import box2D.dynamics.B2Body;
 import box2D.dynamics.B2Fixture;
 import box2D.dynamics.joints.B2Joint;
-import box2D.collision.shapes.B2Shape;
 
 import motion.Actuate;
 import motion.easing.Back;
@@ -69,69 +68,47 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class Design_30_30_NumberofLivesManager extends SceneScript
-{
+class Design_32_32_EnemyReachesFinish extends ActorScript
+{          	
 	
 public var _NumberofLives:Float;
 
-public var _CurrentNumberofLives:Float;
-
-public var _NumberofLivesActor:Actor;
-
-public var _NoMoreLivesTriggered:Bool;
-    
-/* ========================= Custom Block ========================= */
-
-
-/* Params are:__Amount */
-public function _customBlock_decrease_lives(__Amount:Float):Void
-{
-        _CurrentNumberofLives = asNumber(Math.max(0, (_CurrentNumberofLives - __Amount)));
-propertyChanged("_CurrentNumberofLives", _CurrentNumberofLives);
-        if((_CurrentNumberofLives == 0))
-{
-            if(!(_NoMoreLivesTriggered))
-{
-                shoutToScene("_customEvent_" + "_no_more_lives");
-                _NoMoreLivesTriggered = true;
-propertyChanged("_NoMoreLivesTriggered", _NoMoreLivesTriggered);
-}
-
-}
-
-}
+public var _ReachedFinishLine:Bool;
 
  
- 	public function new(dummy:Int, dummy2:Engine)
+ 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
-		super();
+		super(actor);
 		nameMap.set("Number of Lives", "_NumberofLives");
-_NumberofLives = 0.0;
-nameMap.set("Current Number of Lives", "_CurrentNumberofLives");
-_CurrentNumberofLives = 0.0;
-nameMap.set("Number of Lives Actor", "_NumberofLivesActor");
-nameMap.set("No More Lives Triggered?", "_NoMoreLivesTriggered");
-_NoMoreLivesTriggered = false;
+_NumberofLives = 1;
+nameMap.set("Reached Finish Line?", "_ReachedFinishLine");
+_ReachedFinishLine = false;
+nameMap.set("Actor", "actor");
 
 	}
 	
 	override public function init()
 	{
 		    
-/* ======================== When Creating ========================= */
-        createRecycledActor(getActorType(61), 10, 10, Script.FRONT);
-        _NumberofLivesActor = getLastCreatedActor();
-propertyChanged("_NumberofLivesActor", _NumberofLivesActor);
-        _CurrentNumberofLives = asNumber(_NumberofLives);
-propertyChanged("_CurrentNumberofLives", _CurrentNumberofLives);
-    
-/* ========================= When Drawing ========================= */
-addWhenDrawingListener(null, function(g:G, x:Float, y:Float, list:Array<Dynamic>):Void
+/* ======================= Member of Group ======================== */
+addCollisionListener(actor, function(event:Collision, list:Array<Dynamic>):Void
 {
-if(wrapper.enabled)
+if(wrapper.enabled && sameAsAny(getActorGroup(8),event.otherActor.getType(),event.otherActor.getGroup()))
 {
-        g.setFont(getFont(60));
-        g.drawString("" + _CurrentNumberofLives, (15 + (_NumberofLivesActor.getWidth())), 0);
+        if(_ReachedFinishLine)
+{
+            return;
+}
+
+        _ReachedFinishLine = true;
+propertyChanged("_ReachedFinishLine", _ReachedFinishLine);
+        sayToScene("Number of Lives Manager", "_customBlock_decrease_lives", [_NumberofLives]);
+        actor.disableBehavior("Health Manager");
+        actor.disableBehavior("Add Points When Killed");
+        actor.fadeTo(0, 1, Linear.easeNone);
+        runLater(1000 * 2, function(timeTask:TimedTask):Void {
+                    recycleActor(actor);
+}, actor);
 }
 });
 

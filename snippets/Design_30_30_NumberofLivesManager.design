@@ -18,7 +18,7 @@
                         <if comment="false" x="37" y="118">
                             <group eventID="1" id="-1">
                                 <scene-shout comment="false" x="48" y="148">
-                                    <int id="0" val="_no_more_lives"/>
+                                    <int id="0" val="no_more_lives"/>
                                 </scene-shout>
                                 <set-val-30-4 comment="false" x="48" y="168">
                                     <true comment="false" id="0" x="0" y="0"/>
