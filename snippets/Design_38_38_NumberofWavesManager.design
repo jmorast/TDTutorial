@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <create-actor3 comment="false" x="26" y="40">
+                    <ACTORTYPE eid="72" id="0"/>
+                    <int id="1" val="300"/>
+                    <int id="2" val="10"/>
+                    <int id="3" val="0"/>
+                </create-actor3>
+                <create-actor3 comment="false" x="26" y="67">
+                    <ACTORTYPE eid="78" id="0"/>
+                    <int id="1" val="340"/>
+                    <int id="2" val="540"/>
+                    <int id="3" val="0"/>
+                </create-actor3>
+                <set-val-38-5 comment="false" x="26" y="94">
+                    <ACTOR eid="lastcreated" id="0"/>
+                </set-val-38-5>
+                <setanim comment="false" x="26" y="121">
+                    <ACTOR eid="var" id="0" vid="5"/>
+                    <string-to-anim comment="false" id="1" x="0" y="0">
+                        <int id="0" val="Active"/>
+                    </string-to-anim>
+                </setanim>
+                <set-val-38-6 comment="false" x="26" y="153">
+                    <create-list comment="false" id="0" x="0" y="0"/>
+                </set-val-38-6>
+            </group>
+        </init>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <set-font-new comment="false" x="26" y="40">
+                    <FONT eid="76" id="0"/>
+                </set-font-new>
+                <draw-text comment="false" x="26" y="67">
+                    <plus comment="false" id="0" x="0" y="0">
+                        <tostring comment="false" id="0" x="0" y="0">
+                            <get-val-38-2 comment="false" id="0" x="0" y="0"/>
+                        </tostring>
+                        <plus comment="false" id="1" x="0" y="0">
+                            <int id="0" val="/"/>
+                            <tostring comment="false" id="1" x="0" y="0">
+                                <get-val-38-1 comment="false" id="0" x="0" y="0"/>
+                            </tostring>
+                        </plus>
+                    </plus>
+                    <int id="1" val="325"/>
+                    <int id="2" val="0"/>
+                </draw-text>
+            </group>
+        </draw>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="3" id="-1">
+                        <actors-of-type3 comment="false" x="37" y="70">
+                            <group eventID="3" id="-1">
+                                <add-list comment="false" x="48" y="102">
+                                    <get-val-38-6 comment="false" id="0" x="0" y="0"/>
+                                    <actor-of-type comment="false" id="1" x="0" y="0"/>
+                                </add-list>
+                                <set-val-38-1 comment="false" x="48" y="127">
+                                    <minmax comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="1"/>
+                                        <get-val-38-1 comment="false" id="1" x="0" y="0"/>
+                                        <int id="2" val=""/>
+                                    </minmax>
+                                </set-val-38-1>
+                            </group>
+                            <ACTORTYPE id="0"/>
+                        </actors-of-type3>
+                    </group>
+                    <is-empty comment="false" id="0" x="0" y="0">
+                        <get-val-38-6 comment="false" id="0" x="0" y="0"/>
+                    </is-empty>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="3" id="-1"/>
+    <group eventID="4" id="0">
+        <event-mouse-enter-exit-actor comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <scene-shout comment="false" x="26" y="42">
+                    <int id="0" val="start_next_wave"/>
+                </scene-shout>
+            </group>
+            <ACTOR eid="var" id="0" vid="5"/>
+            <int id="1" val="4"/>
+        </event-mouse-enter-exit-actor>
+    </group>
+    <group eventID="4" id="-1"/>
+    <group eventID="5" id="0">
+        <event-custom comment="false" x="15" y="15">
+            <group eventID="5" id="-1">
+                <incdec comment="false" x="26" y="40">
+                    <int id="0" val="3"/>
+                    <int id="1" val="0"/>
+                    <int id="2" val="1"/>
+                </incdec>
+            </group>
+            <int id="0" val="spawner_started"/>
+        </event-custom>
+    </group>
+    <group eventID="5" id="-1"/>
+    <group eventID="6" id="0">
+        <event-custom comment="false" x="15" y="15">
+            <group eventID="6" id="-1">
+                <incdec comment="false" x="26" y="40">
+                    <int id="0" val="3"/>
+                    <int id="1" val="1"/>
+                    <int id="2" val="1"/>
+                </incdec>
+                <if comment="false" x="26" y="67">
+                    <group eventID="6" id="-1">
+                        <toggle-image comment="false" x="37" y="102">
+                            <ACTOR eid="var" id="0" vid="5"/>
+                            <int id="1" val="0"/>
+                        </toggle-image>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <noteq comment="false" id="0" x="0" y="0">
+                            <get-val-38-2 comment="false" id="0" x="0" y="0"/>
+                            <get-val-38-1 comment="false" id="1" x="0" y="0"/>
+                        </noteq>
+                        <eq comment="false" id="1" x="0" y="0">
+                            <get-val-38-3 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="0"/>
+                        </eq>
+                    </and>
+                </if>
+            </group>
+            <int id="0" val="spawner_finished"/>
+        </event-custom>
+    </group>
+    <group eventID="6" id="-1"/>
+    <group eventID="7" id="0">
+        <event-custom comment="false" x="15" y="15">
+            <group eventID="7" id="-1">
+                <incdec comment="false" x="26" y="40">
+                    <int id="0" val="4"/>
+                    <int id="1" val="0"/>
+                    <int id="2" val="1"/>
+                </incdec>
+            </group>
+            <int id="0" val="enemy_spawned"/>
+        </event-custom>
+    </group>
+    <group eventID="7" id="-1"/>
+    <group eventID="8" id="0">
+        <event-group-create-kill comment="false" x="15" y="15">
+            <group eventID="8" id="-1">
+                <incdec comment="false" x="26" y="47">
+                    <int id="0" val="4"/>
+                    <int id="1" val="1"/>
+                    <int id="2" val="1"/>
+                </incdec>
+                <if comment="false" x="26" y="74">
+                    <group eventID="8" id="-1">
+                        <if comment="false" x="37" y="109">
+                            <group eventID="8" id="-1">
+                                <scene-shout comment="false" x="48" y="139">
+                                    <int id="0" val="no_more_enemies"/>
+                                </scene-shout>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-val-38-2 comment="false" id="0" x="0" y="0"/>
+                                <get-val-38-1 comment="false" id="1" x="0" y="0"/>
+                            </eq>
+                        </if>
+                        <else comment="false" x="37" y="171">
+                            <group eventID="8" id="-1">
+                                <scene-shout comment="false" x="48" y="191">
+                                    <int id="0" val="start_next_wave"/>
+                                </scene-shout>
+                            </group>
+                        </else>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <eq comment="false" id="0" x="0" y="0">
+                            <get-val-38-4 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="0"/>
+                        </eq>
+                        <eq comment="false" id="1" x="0" y="0">
+                            <get-val-38-3 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="0"/>
+                        </eq>
+                    </and>
+                </if>
+            </group>
+            <int id="0" val="1"/>
+            <GROUP eid="5" id="1"/>
+        </event-group-create-kill>
+    </group>
+    <group eventID="8" id="-1"/>
+</groups>

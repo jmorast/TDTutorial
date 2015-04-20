@@ -1,0 +1,16 @@
+#
+#Sun Apr 19 23:10:14 EDT 2015
+style=plain
+alphabet=
+color=\#000000
+shadow.y=0
+family=Transformers Movie.ttf
+shadow.x=0
+shadow.color=\#000000
+gradient.offset=7
+shadow.blur=1
+chars=all
+gradient.color=\#33cccc
+stroke.size=0
+antialias=true
+size=24
