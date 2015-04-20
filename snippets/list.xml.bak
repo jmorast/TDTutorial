@@ -168,8 +168,8 @@
             <receiver blockID="9" id="8"/>
         </blocks>
         <events>
-            <event displayName="Drawing" enabled="true" id="16" name="draw" order="3" repeats="true"/>
             <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
+            <event displayName="Drawing" enabled="true" id="16" name="draw" order="3" repeats="true"/>
             <event displayName="Death" enabled="true" id="18" name="event-custom" order="16" repeats="true"/>
             <event displayName="Heal" enabled="true" id="5" name="receiver-1-18" order="6" repeats="true"/>
             <event displayName="Damage" enabled="true" id="6" name="receiver-2-20" order="4" repeats="true"/>
@@ -232,8 +232,8 @@
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Distance X" hidden="true" id="12" name="_DistanceX" order="9"/>
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Distance Y" hidden="true" id="13" name="_DistanceY" order="10"/>
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Distance" hidden="true" id="14" name="_Distance" order="11"/>
-        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Direction" hidden="true" id="15" name="_Direction" order="12"/>
         <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Direction" hidden="true" id="15" name="_Direction" order="12"/>
         <number default="10.0" defaultValue="10.0" desc="The default speed to reach any node." dropdown="" fullname="Default Speed" hidden="false" id="17" name="_DefaultSpeed" order="21"/>
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Current Speed" hidden="true" id="19" name="_CurrentSpeed" order="14"/>
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Current Node" hidden="true" id="18" name="_CurrentNode" order="13"/>
@@ -249,11 +249,11 @@
         </blocks>
         <events>
             <event displayName="Custom Block" enabled="true" id="17" name="event-custom-block" order="16" repeats="true"/>
-            <event displayName="Custom Block" enabled="true" id="16" name="event-custom-block" order="3" repeats="true"/>
             <event displayName="Drawing" enabled="true" id="1" name="draw" order="18" repeats="true"/>
+            <event displayName="Custom Block" enabled="true" id="16" name="event-custom-block" order="3" repeats="true"/>
             <event displayName="Updated" enabled="true" id="2" name="step" order="2" repeats="true"/>
-            <event displayName="Custom Block" enabled="true" id="18" name="event-custom-block" order="17" repeats="true"/>
             <event displayName="Created" enabled="true" id="3" name="init" order="1" repeats="true"/>
+            <event displayName="Custom Block" enabled="true" id="18" name="event-custom-block" order="17" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_14_14_AlwaysSimulate" classname="scripts.Design_14_14_AlwaysSimulate" desc="Allows the actor to simulate even when off screen." description="Allows the actor to simulate even when off screen." design="true" drawOrder="0" id="14" name="Always Simulate" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
@@ -287,16 +287,15 @@
             <receiver blockID="33" id="3"/>
             <receiver blockID="34" id="4"/>
             <receiver blockID="77" id="5"/>
+            <receiver blockID="81" id="6"/>
         </blocks>
         <events>
             <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
             <event displayName="start_wave" enabled="true" id="2" name="event-custom-block" order="2" repeats="true"/>
-            <event displayName="execute_wave" enabled="true" id="3" name="event-custom-block" order="6" repeats="true"/>
-            <event displayName="spawn_enemy" enabled="true" id="4" name="event-custom-block" order="7" repeats="true"/>
-            <event displayName="activate_enemy" enabled="true" id="5" name="event-custom-block" order="8" repeats="true"/>
-            <event displayName="spawner_started" enabled="true" id="6" name="event-custom-block" order="3" repeats="true"/>
-            <event displayName="spawner_finished" enabled="true" id="7" name="event-custom-block" order="4" repeats="true"/>
-            <event displayName="number_of_waves" enabled="true" id="8" name="event-custom-block" order="5" repeats="true"/>
+            <event displayName="execute_wave" enabled="true" id="3" name="event-custom-block" order="7" repeats="true"/>
+            <event displayName="spawn_enemy" enabled="true" id="4" name="event-custom-block" order="8" repeats="true"/>
+            <event displayName="activate_enemy" enabled="true" id="5" name="event-custom-block" order="9" repeats="true"/>
+            <event displayName="number_of_waves" enabled="true" id="9" name="event-custom-block" order="6" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_36_36_ThreeButtonFan" classname="scripts.Design_36_36_ThreeButtonFan" desc="" description="" design="true" drawOrder="0" id="19" name="Three Button Fan" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
@@ -478,26 +477,31 @@
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_38_38_NumberofWavesManager" classname="scripts.Design_38_38_NumberofWavesManager" desc="" description="" design="true" drawOrder="0" id="38" name="Number of Waves Manager" oid="-1" package="scripts" scenespecific="false" shared="false" type="scene">
         <number default="0" defaultValue="0" desc="" dropdown="" fullname="Max Waves" hidden="true" id="1" name="_MaxWaves" order="0"/>
-        <number default="0" defaultValue="0" desc="" dropdown="" fullname="Number of Waves" hidden="true" id="2" name="_NumberofWaves" order="1"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Number of Waves" hidden="true" id="2" name="_NumberofWaves" order="1"/>
         <number default="0" defaultValue="0" desc="" dropdown="" fullname="Active Spanwers" hidden="true" id="3" name="_ActiveSpanwers" order="2"/>
         <number default="0" defaultValue="0" desc="" dropdown="" fullname="Active Enemies" hidden="true" id="4" name="_ActiveEnemies" order="3"/>
         <actor default="" defaultValue="" desc="" dropdown="" fullname="Go Button" hidden="true" id="5" name="_GoButton" order="4"/>
         <list default="list" defaultValue="list" desc="" dropdown="" fullname="Enemy Spawners" hidden="true" id="6" name="_EnemySpawners" order="5"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Current Wave" hidden="true" id="7" name="_CurrentWave" order="6"/>
         <blocks/>
         <events>
             <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
-            <event displayName="Drawing" enabled="true" id="2" name="draw" order="4" repeats="true"/>
+            <event displayName="Drawing" enabled="true" id="2" name="draw" order="3" repeats="true"/>
             <event displayName="Updated" enabled="true" id="3" name="step" order="5" repeats="true"/>
             <event displayName="On Actor" enabled="true" id="4" name="event-mouse-enter-exit-actor" order="6" repeats="true"/>
             <event displayName="spawner_started" enabled="true" id="5" name="event-custom" order="7" repeats="true"/>
             <event displayName="spawner_finsihed" enabled="true" id="6" name="event-custom" order="8" repeats="true"/>
-            <event displayName="enemy_spawned" enabled="true" id="7" name="event-custom" order="9" repeats="true"/>
+            <event displayName="enemy_spawned" enabled="true" id="7" name="event-custom" order="10" repeats="true"/>
             <event displayName="Actor Created" enabled="true" id="8" name="event-group-create-kill" order="2" repeats="true"/>
+            <event displayName="start_next_wave" enabled="true" id="9" name="event-custom" order="9" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_39_39_PlayerWins" classname="scripts.Design_39_39_PlayerWins" desc="" description="" design="true" drawOrder="0" id="39" name="Player Wins" oid="-1" package="scripts" scenespecific="false" shared="false" type="scene">
+        <actor default="" defaultValue="" desc="" dropdown="" fullname="Message" hidden="true" id="1" name="_Message" order="0"/>
         <blocks/>
-        <events/>
+        <events>
+            <event displayName="Custom Event" enabled="true" id="1" name="event-custom" order="1" repeats="true"/>
+        </events>
     </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_72" classname="scripts.ActorEvents_72" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="36" name="ActorEvents_72" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
         <blocks/>

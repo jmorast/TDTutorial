@@ -12,12 +12,10 @@
         </init>
     </group>
     <group eventID="1" id="1">
-        <custom-31 comment="false" x="34" y="95">
+        <custom-31 comment="false" x="39" y="144">
             <ACTOR eid="this" id="0"/>
         </custom-31>
-    </group>
-    <group eventID="1" id="3">
-        <set-val-16-6 comment="false" x="240" y="167">
+        <set-val-16-6 comment="false" x="39" y="171">
             <int id="0" val=""/>
         </set-val-16-6>
     </group>
@@ -27,16 +25,22 @@
             <group eventID="2" id="-1">
                 <if comment="false" x="26" y="45">
                     <group eventID="2" id="-1">
-                        <stop comment="false" x="37" y="75"/>
+                        <print comment="false" x="37" y="75">
+                            <int id="0" val="DDDEBUG FOUND IT in spawn enemies"/>
+                        </print>
+                        <stop comment="false" x="37" y="95"/>
                     </group>
                     <is-empty comment="false" id="0" x="0" y="0">
                         <get-val-16-12 comment="false" id="0" x="0" y="0"/>
                     </is-empty>
                 </if>
-                <scene-shout comment="false" x="26" y="107">
-                    <int id="0" val="spwner_started"/>
+                <print comment="false" x="26" y="127">
+                    <int id="0" val="DDDEBUG out in spawn enemies"/>
+                </print>
+                <scene-shout comment="false" x="26" y="147">
+                    <int id="0" val="spawner_started"/>
                 </scene-shout>
-                <custom-32 comment="false" x="26" y="127">
+                <custom-32 comment="false" x="26" y="167">
                     <get-byobval-16-31-0 comment="false" id="0" x="0" y="0"/>
                     <str-split-space comment="false" id="1" x="0" y="0">
                         <get-item comment="false" id="0" x="0" y="0">
@@ -45,7 +49,7 @@
                         </get-item>
                     </str-split-space>
                 </custom-32>
-                <remove-index comment="false" x="26" y="169">
+                <remove-index comment="false" x="26" y="209">
                     <get-val-16-12 comment="false" id="0" x="0" y="0"/>
                     <int id="1" val="0"/>
                 </remove-index>
@@ -54,34 +58,40 @@
         </receiver-1-31>
     </group>
     <group eventID="2" id="-1">
-        <get-val-16-6 comment="false" x="184" y="313"/>
-        <get-val-16-6 comment="false" x="445" y="203"/>
         <get-val-16-6 comment="false" x="84" y="315"/>
+        <get-val-16-6 comment="false" x="445" y="203"/>
+        <get-val-16-6 comment="false" x="184" y="313"/>
     </group>
     <group eventID="3" id="0">
         <receiver-2-32 comment="false" x="15" y="15">
             <group eventID="3" id="-1">
-                <periodic comment="false" x="26" y="45">
+                <print comment="false" x="26" y="45">
+                    <int id="0" val="DDDEBUG 1"/>
+                </print>
+                <periodic comment="false" x="26" y="65">
                     <group eventID="3" id="-1">
-                        <if comment="false" x="37" y="77">
+                        <print comment="false" x="37" y="97">
+                            <int id="0" val="DDDEBUG 2"/>
+                        </print>
+                        <if comment="false" x="37" y="117">
                             <group eventID="3" id="-1">
-                                <scene-shout comment="false" x="48" y="107">
+                                <scene-shout comment="false" x="48" y="147">
                                     <int id="0" val="spawner_finished"/>
                                 </scene-shout>
-                                <cancel comment="false" x="48" y="127"/>
+                                <cancel comment="false" x="48" y="167"/>
                             </group>
                             <is-empty comment="false" id="0" x="0" y="0">
                                 <get-byobval-16-32-1 comment="false" id="0" x="0" y="0"/>
                             </is-empty>
                         </if>
-                        <custom-33 comment="false" x="37" y="159">
+                        <custom-33 comment="false" x="37" y="199">
                             <get-byobval-16-32-0 comment="false" id="0" x="0" y="0"/>
                             <get-item comment="false" id="1" x="0" y="0">
                                 <get-byobval-16-32-1 comment="false" id="0" x="0" y="0"/>
                                 <int id="1" val="0"/>
                             </get-item>
                         </custom-33>
-                        <remove-index comment="false" x="37" y="196">
+                        <remove-index comment="false" x="37" y="236">
                             <get-byobval-16-32-1 comment="false" id="0" x="0" y="0"/>
                             <int id="1" val="0"/>
                         </remove-index>
@@ -238,29 +248,17 @@
             <int id="1" val="1"/>
         </get-item>
     </group>
-    <group eventID="6" id="0">
-        <event-custom-block comment="false" x="15" y="15">
-            <group eventID="6" id="-1"/>
-        </event-custom-block>
-    </group>
-    <group eventID="6" id="-1"/>
-    <group eventID="7" id="0">
-        <event-custom-block comment="false" x="15" y="15">
-            <group eventID="7" id="-1"/>
-        </event-custom-block>
-    </group>
-    <group eventID="7" id="-1"/>
-    <group eventID="8" id="0">
-        <receiver-5-77 comment="false" x="15" y="15">
-            <group eventID="8" id="-1">
+    <group eventID="9" id="0">
+        <receiver-6-81 comment="false" x="15" y="15">
+            <group eventID="9" id="-1">
                 <return comment="false" x="26" y="45">
                     <length-list comment="false" id="0" x="0" y="0">
                         <get-val-16-6 comment="false" id="0" x="0" y="0"/>
                     </length-list>
                 </return>
             </group>
-            <get-byobval-16-77-0 comment="false" id="0" x="0" y="0"/>
-        </receiver-5-77>
+            <get-byobval-16-81-0 comment="false" id="0" x="0" y="0"/>
+        </receiver-6-81>
     </group>
-    <group eventID="8" id="-1"/>
+    <group eventID="9" id="-1"/>
 </groups>

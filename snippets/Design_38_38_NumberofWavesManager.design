@@ -12,7 +12,7 @@
                 <create-actor3 comment="false" x="26" y="67">
                     <ACTORTYPE eid="78" id="0"/>
                     <int id="1" val="340"/>
-                    <int id="2" val="540"/>
+                    <int id="2" val="40"/>
                     <int id="3" val="0"/>
                 </create-actor3>
                 <set-val-38-5 comment="false" x="26" y="94">
@@ -40,10 +40,12 @@
                 <draw-text comment="false" x="26" y="67">
                     <plus comment="false" id="0" x="0" y="0">
                         <tostring comment="false" id="0" x="0" y="0">
-                            <get-val-38-2 comment="false" id="0" x="0" y="0"/>
+                            <get-val-38-7 comment="false" id="0" x="0" y="0"/>
                         </tostring>
                         <plus comment="false" id="1" x="0" y="0">
-                            <int id="0" val="/"/>
+                            <tostring comment="false" id="0" x="0" y="0">
+                                <int id="0" val="/"/>
+                            </tostring>
                             <tostring comment="false" id="1" x="0" y="0">
                                 <get-val-38-1 comment="false" id="0" x="0" y="0"/>
                             </tostring>
@@ -71,11 +73,13 @@
                                     <minmax comment="false" id="0" x="0" y="0">
                                         <int id="0" val="1"/>
                                         <get-val-38-1 comment="false" id="1" x="0" y="0"/>
-                                        <int id="2" val=""/>
+                                        <custom-81 comment="false" id="2" x="0" y="0">
+                                            <actor-of-type comment="false" id="0" x="0" y="0"/>
+                                        </custom-81>
                                     </minmax>
                                 </set-val-38-1>
                             </group>
-                            <ACTORTYPE id="0"/>
+                            <ACTORTYPE eid="29" id="0"/>
                         </actors-of-type3>
                     </group>
                     <is-empty comment="false" id="0" x="0" y="0">
@@ -84,6 +88,11 @@
                 </if>
             </group>
         </step>
+    </group>
+    <group eventID="3" id="4">
+        <print comment="false" x="122" y="269">
+            <int id="0" val="DDDEBUG"/>
+        </print>
     </group>
     <group eventID="3" id="-1"/>
     <group eventID="4" id="0">
@@ -128,7 +137,7 @@
                     </group>
                     <and comment="false" id="0" x="0" y="0">
                         <noteq comment="false" id="0" x="0" y="0">
-                            <get-val-38-2 comment="false" id="0" x="0" y="0"/>
+                            <get-val-38-7 comment="false" id="0" x="0" y="0"/>
                             <get-val-38-1 comment="false" id="1" x="0" y="0"/>
                         </noteq>
                         <eq comment="false" id="1" x="0" y="0">
@@ -172,7 +181,7 @@
                                 </scene-shout>
                             </group>
                             <eq comment="false" id="0" x="0" y="0">
-                                <get-val-38-2 comment="false" id="0" x="0" y="0"/>
+                                <get-val-38-7 comment="false" id="0" x="0" y="0"/>
                                 <get-val-38-1 comment="false" id="1" x="0" y="0"/>
                             </eq>
                         </if>
@@ -201,4 +210,47 @@
         </event-group-create-kill>
     </group>
     <group eventID="8" id="-1"/>
+    <group eventID="9" id="0">
+        <event-custom comment="false" x="15" y="15">
+            <group eventID="9" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="9" id="-1">
+                        <stop comment="false" x="37" y="70"/>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-38-7 comment="false" id="0" x="0" y="0"/>
+                        <get-val-38-1 comment="false" id="1" x="0" y="0"/>
+                    </eq>
+                </if>
+                <if comment="false" x="26" y="102">
+                    <group eventID="9" id="-1">
+                        <stop comment="false" x="37" y="132"/>
+                    </group>
+                    <noteq comment="false" id="0" x="0" y="0">
+                        <get-val-38-3 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </noteq>
+                </if>
+                <incdec comment="false" x="26" y="164">
+                    <int id="0" val="7"/>
+                    <int id="1" val="0"/>
+                    <int id="2" val="1"/>
+                </incdec>
+                <toggle-image comment="false" x="26" y="191">
+                    <ACTOR eid="var" id="0" vid="5"/>
+                    <int id="1" val="1"/>
+                </toggle-image>
+                <actors-of-type3 comment="false" x="26" y="218">
+                    <group eventID="9" id="-1">
+                        <custom-31 comment="false" x="37" y="250">
+                            <actor-of-type comment="false" id="0" x="0" y="0"/>
+                        </custom-31>
+                    </group>
+                    <ACTORTYPE eid="29" id="0"/>
+                </actors-of-type3>
+            </group>
+            <int id="0" val="start_next_wave"/>
+        </event-custom>
+    </group>
+    <group eventID="9" id="-1"/>
 </groups>

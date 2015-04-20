@@ -3,8 +3,8 @@
     <exts>
         <e enabled="false" id="test-native"/>
         <e enabled="false" id="test"/>
-        <e enabled="false" id="label"/>
         <e enabled="false" id="test-flash"/>
+        <e enabled="false" id="label"/>
         <e enabled="false" id="tileapi"/>
     </exts>
     <scales>
@@ -68,8 +68,8 @@
             <r id="78"/>
             <r id="41"/>
             <r id="72"/>
-            <r id="74"/>
             <r id="61"/>
+            <r id="74"/>
         </group>
     </folders>
     <packs/>
@@ -82,12 +82,12 @@
         <group desc="" id="9" name="Messages"/>
     </groups>
     <cgroups>
-        <cgroup g1="1" g2="3"/>
         <cgroup g1="0" g2="1"/>
+        <cgroup g1="1" g2="3"/>
         <cgroup g1="5" g2="5"/>
         <cgroup g1="4" g2="5"/>
-        <cgroup g1="3" g2="3"/>
         <cgroup g1="5" g2="8"/>
+        <cgroup g1="3" g2="3"/>
     </cgroups>
     <input>
         <key id="0" keyname="UP" name="up" vk="38" vks="38"/>

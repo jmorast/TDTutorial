@@ -1,2 +1,58 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<groups/>
+<groups>
+    <group eventID="1" id="0">
+        <event-custom comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <comment-short comment="false" x="26" y="40">
+                    <int id="0" val="Disable all create tower buttons"/>
+                </comment-short>
+                <actors-of-type3 comment="false" x="26" y="60">
+                    <group eventID="1" id="-1">
+                        <actor-enabledisable-snippet comment="false" x="37" y="92">
+                            <actor-of-type comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="Three Button Fan"/>
+                        </actor-enabledisable-snippet>
+                    </group>
+                    <ACTORTYPE eid="35" id="0"/>
+                </actors-of-type3>
+                <comment-short comment="false" x="26" y="136">
+                    <int id="0" val="Show you win button and reload scene"/>
+                </comment-short>
+                <create-actor3 comment="false" x="26" y="156">
+                    <ACTORTYPE eid="74" id="0"/>
+                    <int id="1" val="0"/>
+                    <int id="2" val="0"/>
+                    <int id="3" val="0"/>
+                </create-actor3>
+                <set-val-39-1 comment="false" x="26" y="183">
+                    <ACTOR eid="lastcreated" id="0"/>
+                </set-val-39-1>
+                <dolater comment="false" x="26" y="210">
+                    <group eventID="1" id="-1">
+                        <dolater comment="false" x="37" y="250">
+                            <group eventID="1" id="-1">
+                                <scene-reload-color comment="false" x="48" y="277">
+                                    <int id="0" val="5"/>
+                                    <int id="1" val=".5"/>
+                                    <color b="0" g="0" id="2" r="0"/>
+                                    <int id="3" val="5"/>
+                                    <int id="4" val=".5"/>
+                                    <color b="0" g="0" id="5" r="0"/>
+                                </scene-reload-color>
+                            </group>
+                            <int id="0" val="1"/>
+                            <ACTOR eid="lastcreated" id="2"/>
+                        </dolater>
+                    </group>
+                    <custom-71 comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="var" id="0" vid="1"/>
+                    </custom-71>
+                    <ACTOR eid="lastcreated" id="2"/>
+                </dolater>
+            </group>
+            <int id="0" val="no_more_enemies"/>
+        </event-custom>
+    </group>
+    <group eventID="1" id="-1"/>
+</groups>
